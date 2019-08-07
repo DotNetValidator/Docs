@@ -1,0 +1,29 @@
+.side-nav {
+  position: sticky;
+  top: $top-navbar-height;
+  max-height: calc(100vh - #{$top-navbar-height});
+  padding-top: 3rem;
+  max-width: $side-nav-width;
+  min-width: $side-nav-width;
+  overflow-y: auto;
+  .navbar {
+    display: block;
+    overflow-y: auto;
+
+    .section-title {
+      font-size: 1rem;
+    }
+
+    a {
+      color: $anchor-inactive-color;
+
+      &:hover {
+        color: $anchor-hover-color;
+      }
+
+      &.active {
+        color: $anchor-hover-color;
+      }
+    }
+  }
+}

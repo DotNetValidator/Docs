@@ -3,6 +3,7 @@ import { NgModule } from "@angular/core";
 
 import * as fromContainers from "./containers";
 import * as fromComponents from "./components";
+import { MainRoutingModule } from "./main-routing.module";
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import * as fromComponents from "./components";
     ...fromComponents.COMPONENTS
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MainRoutingModule
   ],
   providers: [],
   bootstrap: [fromContainers.MainComponent]

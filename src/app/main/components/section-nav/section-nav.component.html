@@ -1,9 +1,12 @@
 <div class="section-nav">
     <nav class="navbar">
         <div class="nav-item">
-            <a routerLink="#" class="nav-link">Section 1.1</a>
-            <a routerLink="#" class="nav-link">Section 1.2</a>
-            <a routerLink="#" class="nav-link">Section 1.3</a>
+            <a routerLink="/" [class.active]="(activeSection | async) === 'section1'" fragment="section1"
+                class="nav-link" (click)="onSectionClick('section1')">Section 1.1</a>
+            <a routerLink="/" [class.active]="(activeSection | async) === 'section2'" fragment="section2"
+                class="nav-link" (click)="onSectionClick('section2')">Section 1.2</a>
+            <a routerLink="/" [class.active]="(activeSection | async) === 'section3'" fragment="section3"
+                class="nav-link" (click)="onSectionClick('section3')">Section 1.3</a>
         </div>
     </nav>
 </div>

@@ -1,0 +1,40 @@
+.top-nav {
+  background-color: $theme-color;
+  color: $top-navbar-color;
+  height: $top-navbar-height;
+
+  .navbar {
+    display: inline-block;
+    color: $top-navbar-color;
+
+    a:hover {
+      color: $top-navbar-color;
+    }
+
+    &.navbar-right {
+      display: flex;
+      float: right;
+    }
+
+    .logo {
+      img {
+        margin-right: 1rem;
+      }
+
+      .logo-text {
+        font-size: $logo-text-font-size;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    }
+
+    &.version-wrapper {
+      padding-left: 0;
+
+      .version {
+        text-decoration: underline;
+        font-weight: bold;
+      }
+    }
+  }
+}
