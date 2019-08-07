@@ -1,16 +1,24 @@
 <div class="top-nav fixed-top">
-    <nav>
-        <div class="navbar">
-            <a class="logo" routerLink="/">
-                <img src="favicon.ico" alt="">
-                <span class="logo-text">DotNet Validator</span>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a routerLink="">
+                <img src="favicon.svg" alt="">
+                <span class="brand-text">DotNet Validator</span>
             </a>
-        </div>
-        <div class="navbar version-wrapper">
             <a routerLink="/versions" class="version">1.0.0</a>
         </div>
-        <div class="navbar navbar-right">
-            <a routerLink="">GitHub</a>
+        <div class="navbar-nav">
+            <a routerLink="" class="nav-link">
+                <i class="fa fa-github"></i>
+                GitHub
+            </a>
+            <a routerLink="" class="nav-link">
+                <i class="fa fa-download"></i>
+                Download
+            </a>
+            <button class="navbar-toggler" type="button" (click)="onSideNavCollapse()">
+                <i class="fa fa-bars"></i>
+            </button>
         </div>
     </nav>
 </div>

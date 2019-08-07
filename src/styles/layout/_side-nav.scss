@@ -1,17 +1,19 @@
 .side-nav {
   position: sticky;
   top: $top-navbar-height;
+  display: block;
   max-height: calc(100vh - #{$top-navbar-height});
-  padding-top: 3rem;
   max-width: $side-nav-width;
   min-width: $side-nav-width;
+  padding-top: calc(#{$top-navbar-height} - #{$main-content-top-spacing});
   overflow-y: auto;
+
   .navbar {
     display: block;
-    overflow-y: auto;
 
     .section-title {
       font-size: 1rem;
+      color: $side-nav-section-title-text-color;
     }
 
     a {
@@ -24,6 +26,20 @@
       &.active {
         color: $anchor-hover-color;
       }
+    }
+  }
+}
+
+@include screen-max-md {
+  .side-nav {
+    position: fixed;
+    left: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    background-color: $side-nav-expanded-bg;
+    z-index: 100;
+    &.collapsed {
+      display: none;
     }
   }
 }

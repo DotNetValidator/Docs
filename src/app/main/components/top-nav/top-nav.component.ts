@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import {Component} from "@angular/core";
 
 @Component({
   selector: "app-top-nav",
@@ -6,4 +6,9 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./top-nav.component.sass"]
 })
 export class TopNavComponent {
+
+  onSideNavCollapse() {
+    // Toggle collapsed class to side-nav
+    document.getElementById("side-nav").classList.toggle("collapsed");
+  }
 }

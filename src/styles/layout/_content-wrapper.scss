@@ -1,5 +1,5 @@
 .content-wrapper {
-  padding: 2rem;
-  margin-top: 1rem;
+  padding: 0 2rem 2rem 2rem;
+  margin-top: calc(#{$top-navbar-height} - #{$main-content-top-spacing});
   width: 100%;
 }
