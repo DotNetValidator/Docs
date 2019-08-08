@@ -1,0 +1,22 @@
+{
+    "$schema": "../schema/db.schema.json",
+    "versions": [
+        {
+            "version": "1.0.0",
+            "isLatest": true,
+            "groups": [
+                {
+                    "title": "Introduction",
+                    "posts": [
+                        {
+                            "id": "getting-started",
+                            "title": "Getting Started",
+                            "fileName": "getting-started.html",
+                            "sections": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

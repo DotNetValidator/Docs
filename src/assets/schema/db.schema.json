@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "The documentation database",
+    "description": "Defines the structure of the documentation versions",
+    "type": "object",
+    "properties": {
+        "versions": {
+            "type": "array",
+            "items": {
+                "$ref": "./documentation-version.schema.json"
+            },
+            "description": "The versions of the documentation"
+        }
+    },
+    "required": [
+        "versions"
+    ]
+}
