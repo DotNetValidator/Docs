@@ -1,4 +1,5 @@
-import { Component, OnInit } from "@angular/core";
+import {Component, Input} from "@angular/core";
+import {Post, DocumentationVersion} from "../../models";
 
 @Component({
   selector: "app-post",
@@ -6,4 +7,6 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./post.component.sass"]
 })
 export class PostComponent {
+  @Input() post: Post;
+  @Input() version: DocumentationVersion;
 }

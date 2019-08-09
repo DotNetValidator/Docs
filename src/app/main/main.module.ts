@@ -1,20 +1,29 @@
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
+import {BrowserModule} from "@angular/platform-browser";
+import {NgModule} from "@angular/core";
+import {HttpClientModule} from "@angular/common/http";
 
 import * as fromContainers from "./containers";
 import * as fromComponents from "./components";
-import { MainRoutingModule } from "./main-routing.module";
+import * as fromServices from "./services";
+import * as fromPipes from "./pipes";
+
+import {MainRoutingModule} from "./main-routing.module";
 
 @NgModule({
   declarations: [
     ...fromContainers.CONTAINERS,
-    ...fromComponents.COMPONENTS
+    ...fromComponents.COMPONENTS,
+    ...fromPipes.PIPES
   ],
   imports: [
     BrowserModule,
-    MainRoutingModule
+    MainRoutingModule,
+    HttpClientModule,
+    NgxDynamicTemplateModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    ...fromServices.SERVICES
+  ],
   bootstrap: [fromContainers.MainComponent]
 })
-export class MainModule { }
+export class MainModule {}

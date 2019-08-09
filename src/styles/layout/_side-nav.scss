@@ -3,6 +3,7 @@
   top: $top-navbar-height;
   display: block;
   max-height: calc(100vh - #{$top-navbar-height});
+  min-height: calc(100vh - #{$top-navbar-height});
   max-width: $side-nav-width;
   min-width: $side-nav-width;
   padding-top: calc(#{$top-navbar-height} - #{$main-content-top-spacing});

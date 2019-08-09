@@ -15,7 +15,7 @@
         "sections": {
             "type": "array",
             "items": {
-                "type": "string"
+                "$ref": "./post-section.schema.json"
             },
             "uniqueItems": true,
             "description": "An array of the sections which included in the post body"

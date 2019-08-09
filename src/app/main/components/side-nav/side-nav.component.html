@@ -1,15 +1,16 @@
 <div class="side-nav collapsed" id="side-nav">
     <nav class="navbar">
-        <div class="nav-item">
+        <div *ngFor="let group of version.groups" class="nav-item">
             <h3 class="section-title">
                 <i class="fa fa-leanpub"></i>
-                Section 1
+                {{group.title}}
             </h3>
-            <a class="nav-link" routerLink="/" routerLinkActive="active">Link 1</a>
-            <a class="nav-link" routerLink="/link1" routerLinkActive="active">Link 2</a>
-            <a class="nav-link" routerLink="/link1" routerLinkActive="active">Link 3</a>
+            <a *ngFor="let post of group.posts" [routerLink]="['/docs', version.version, post.id]"
+                routerLinkActive="active" class="nav-link">
+                {{post.title}}
+            </a>
         </div>
-        <div class="nav-item">
+        <!-- <div class="nav-item">
             <h3 class="section-title">
                 <i class="fa fa-leanpub"></i>
                 Section 2
@@ -71,6 +72,6 @@
             <a class="nav-link" routerLink="/link1" routerLinkActive="active">Link 1</a>
             <a class="nav-link" routerLink="/link1" routerLinkActive="active">Link 2</a>
             <a class="nav-link" routerLink="/link1" routerLinkActive="active">Link 3</a>
-        </div>
+        </div> -->
     </nav>
 </div>

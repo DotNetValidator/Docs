@@ -1,10 +1,10 @@
 <div class="doc-prev-next">
-    <a class="doc-prev button" routerLink="/">
+    <a *ngIf="previous" [routerLink]="['/docs', version.version, previous.id]" class="doc-prev button">
         <span>← </span>
-        <span>Previous</span>
+        <span>{{previous.title}}</span>
     </a>
-    <a class="doc-next button" routerLink="/">
-        <span>Next</span>
+    <a *ngIf="next" [routerLink]="['/docs', version.version, next.id]" class="doc-next button">
+        <span>{{next.title}}</span>
         <span> →</span>
     </a>
 </div>

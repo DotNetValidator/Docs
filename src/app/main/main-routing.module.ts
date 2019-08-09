@@ -6,8 +6,17 @@ import * as fromComponents from "./components";
 
 const routes: Routes = [
     {
-        path: "",
+        path: "docs/:versionId/:postId",
         component: fromContainers.LayoutComponent
+    },
+    {
+        path: "docs",
+        component: fromContainers.LayoutComponent
+    },
+    {
+        path: "",
+        pathMatch: "full",
+        redirectTo: "docs"
     }
 ];
 

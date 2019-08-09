@@ -1,5 +1,5 @@
 {
-    "$schema": "../schema/db.schema.json",
+    "$schema": "../schema/database.schema.json",
     "versions": [
         {
             "version": "1.0.0",
@@ -12,6 +12,54 @@
                             "id": "getting-started",
                             "title": "Getting Started",
                             "fileName": "getting-started.html",
+                            "sections": [
+                                {
+                                    "id": "section1",
+                                    "title": "Section 1"
+                                },
+                                {
+                                    "id": "section2",
+                                    "title": "Section 2"
+                                },
+                                {
+                                    "id": "section3",
+                                    "title": "Section 3"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "installation",
+                            "title": "Installation",
+                            "fileName": "installation-guid.html",
+                            "sections": []
+                        },
+                        {
+                            "id": "Testing",
+                            "title": "Testing",
+                            "fileName": "installation-guid.html",
+                            "sections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Introduction",
+                    "posts": [
+                        {
+                            "id": "getting-started2",
+                            "title": "Getting Started 2",
+                            "fileName": "getting-started.html",
+                            "sections": []
+                        },
+                        {
+                            "id": "installation2",
+                            "title": "Installation 2",
+                            "fileName": "installation-guid.html",
+                            "sections": []
+                        },
+                        {
+                            "id": "Testing2",
+                            "title": "Testing 2",
+                            "fileName": "installation-guid.html",
                             "sections": []
                         }
                     ]

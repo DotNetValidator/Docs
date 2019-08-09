@@ -1,4 +1,5 @@
-import { Component, OnInit } from "@angular/core";
+import {Component, Input} from "@angular/core";
+import {DocumentationVersion} from "../../models";
 
 @Component({
   selector: "app-side-nav",
@@ -6,4 +7,6 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./side-nav.component.sass"]
 })
 export class SideNavComponent {
+
+  @Input() version: DocumentationVersion;
 }

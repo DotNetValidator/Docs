@@ -1,6 +1,7 @@
-import {Component} from "@angular/core";
+import {Component, Input} from "@angular/core";
 import {ActivatedRoute} from "@angular/router";
 import {share} from "rxjs/operators";
+import {Post, DocumentationVersion} from "../../models";
 
 @Component({
   selector: "app-section-nav",
@@ -10,6 +11,10 @@ import {share} from "rxjs/operators";
 export class SectionNavComponent {
 
   activeSection = this.route.fragment.pipe(share());
+
+  @Input() post: Post;
+  @Input() version: DocumentationVersion;
+
   constructor (public route: ActivatedRoute) {}
 
   // Use this method to scroll manually to a given html element id
