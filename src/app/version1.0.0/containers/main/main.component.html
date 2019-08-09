@@ -1,0 +1,20 @@
+<!-- Side Nav -->
+<app-side-navigator>
+
+    <ng-container class="groups">
+        <app-side-navigator-group [title]="'Introduction'">
+
+            <ng-container class="links">
+                <app-side-navigator-item [title]="'Getting Started'" [route]="'/docs/v1.0.0/getting-started'">
+                </app-side-navigator-item>
+            </ng-container>
+
+        </app-side-navigator-group>
+    </ng-container>
+
+</app-side-navigator>
+<!-- End Side Nav -->
+
+<!-- Post -->
+<router-outlet></router-outlet>
+<!-- Post -->

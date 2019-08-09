@@ -1,0 +1,42 @@
+<!-- Content Wrapper -->
+<div class="content-wrapper">
+
+
+    <!-- Header -->
+    <app-post-header [title]="title"></app-post-header>
+    <!-- End Header -->
+
+    <!-- Article -->
+    <app-post-article>
+
+        <!-- Get article from post container -->
+        <ng-container class="article">
+
+            <!-- Pass article to article component -->
+            <ng-content select=".article"></ng-content>
+
+        </ng-container>
+
+    </app-post-article>
+    <!-- End Article -->
+
+    <!-- Section Nav -->
+    <app-post-section-navigator>
+
+        <!-- Get sections from post container -->
+        <ng-container class="sections">
+
+            <!-- Pass sections to post section navigator component -->
+            <ng-content select=".sections"></ng-content>
+
+        </ng-container>
+
+    </app-post-section-navigator>
+    <!-- End Section Nav -->
+
+</div>
+<!-- Content Wrapper -->
+
+<!-- Post Nav -->
+<app-post-navigator></app-post-navigator>
+<!-- End Post Nav -->

@@ -6,17 +6,19 @@ import * as fromComponents from "./components";
 
 const routes: Routes = [
     {
-        path: "docs/:versionId/:postId",
-        component: fromContainers.LayoutComponent
-    },
-    {
         path: "docs",
-        component: fromContainers.LayoutComponent
+        component: fromContainers.LayoutComponent,
+        children: [
+            {
+                path: "v1.0.0",
+                loadChildren: () => import("../version1.0.0").then(m => m.Version100Module)
+            }
+        ]
     },
     {
         path: "",
-        pathMatch: "full",
-        redirectTo: "docs"
+        redirectTo: "docs/v1.0.0/getting-started",
+        pathMatch: "full"
     }
 ];
 

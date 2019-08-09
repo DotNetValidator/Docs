@@ -2,12 +2,12 @@ import {BrowserModule} from "@angular/platform-browser";
 import {NgModule} from "@angular/core";
 import {HttpClientModule} from "@angular/common/http";
 
+import {MainRoutingModule} from "./main-routing.module";
+
 import * as fromContainers from "./containers";
 import * as fromComponents from "./components";
 import * as fromServices from "./services";
 import * as fromPipes from "./pipes";
-
-import {MainRoutingModule} from "./main-routing.module";
 
 @NgModule({
   declarations: [
@@ -19,7 +19,6 @@ import {MainRoutingModule} from "./main-routing.module";
     BrowserModule,
     MainRoutingModule,
     HttpClientModule,
-    NgxDynamicTemplateModule.forRoot()
   ],
   providers: [
     ...fromServices.SERVICES
