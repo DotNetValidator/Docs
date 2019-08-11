@@ -15,6 +15,14 @@ export class GettingStartedComponent implements OnInit {
   previous: IPost;
   next: IPost;
 
+  //#region Codes
+  person1 = `
+  public class Person {
+    public string Name {get; set;}
+    public int Age {get; set;}
+  }`;
+  //#endregion
+
   ngOnInit(): void {
     this.post = DocService.findPost(this.versionId, this.postId);
 

@@ -4,11 +4,13 @@ import {RouterModule} from "@angular/router";
 
 import * as fromContainers from "./containers";
 import * as fromComponents from "./components";
+import * as fromDirectives from "./directives";
 
 @NgModule({
   declarations: [
     ...fromContainers.CONTAINERS,
-    ...fromComponents.COMPONENTS
+    ...fromComponents.COMPONENTS,
+    ...fromDirectives.DIRECTIVES
   ],
   imports: [
     CommonModule,
@@ -16,7 +18,8 @@ import * as fromComponents from "./components";
   ],
   exports: [
     ...fromContainers.CONTAINERS,
-    ...fromComponents.COMPONENTS
+    ...fromComponents.COMPONENTS,
+    ...fromDirectives.DIRECTIVES
   ]
 })
 export class SharedModule {
