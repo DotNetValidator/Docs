@@ -1,4 +1,5 @@
 import {Component, Input} from "@angular/core";
+import {IPost} from "../../models";
 
 @Component({
   selector: "app-side-navigator-item",
@@ -6,6 +7,5 @@ import {Component, Input} from "@angular/core";
   styleUrls: ["./side-navigator-item.component.sass"]
 })
 export class SideNavigatorItemComponent {
-  @Input() title: string;
-  @Input() route: string;
+  @Input() post: IPost;
 }

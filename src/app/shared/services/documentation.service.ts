@@ -11,7 +11,7 @@ export class DocService {
      * Gets the documentation version with the given id.
      * @param id The unique identifier for the documentation version.
      */
-    static findVersion(id: string): IVersion {
+    public static findVersion(id: string): IVersion {
         return Versions.find(version => version.id === id);
     }
 
@@ -20,7 +20,7 @@ export class DocService {
      * @param versionId The unique identifier for the documentation version.
      * @param postId The unique identifier for the post.
      */
-    static findPost(versionId: string, postId: string): IPost {
+    public static findPost(versionId: string, postId: string): IPost {
         return this.getPosts(versionId).find(post => post.id === postId);
     }
 
@@ -29,7 +29,7 @@ export class DocService {
      * @param versionId The unique identifier for the documentation version.
      * @param postId The unique identifier for the post.
      */
-    static GetPrevNextPosts(versionId: string, postId: string): {previous?: IPost, next?: IPost} {
+    public static GetPrevNextPosts(versionId: string, postId: string): {previous?: IPost, next?: IPost} {
         const result: {previous?: IPost, next?: IPost} = {};
 
         const posts = this.getPosts(versionId);
@@ -39,6 +39,13 @@ export class DocService {
         result.next = posts[postIndex + 1];
 
         return result;
+    }
+
+    /**
+     * Gets the latest documentation version.
+     */
+    public static getLatestVersion(): IVersion {
+        return Versions[Versions.length - 1];
     }
 
     /**

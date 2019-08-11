@@ -1,5 +1,6 @@
 import {Component, OnInit} from "@angular/core";
 import {IVersion, DocService} from "../../../shared";
+import {GlobalService} from "../../../root";
 
 @Component({
   selector: "app-main",
@@ -11,8 +12,11 @@ export class MainComponent implements OnInit {
   versionId = "1.0.0";
   version: IVersion;
 
+  constructor (private globalService: GlobalService) {}
+
   ngOnInit(): void {
     this.version = DocService.findVersion(this.versionId);
+    this.globalService.setVersion(this.version.version);
   }
 
 }

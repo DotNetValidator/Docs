@@ -1,8 +1,8 @@
 import {NgModule} from "@angular/core";
 import {CommonModule} from "@angular/common";
 
-import {Version100RoutingModule} from "./version1.0.0-routing.module";
 import {SharedModule} from "../shared";
+import {Version100RoutingModule} from "./version1.0.0-routing.module";
 
 import * as fromContainers from "./containers";
 import * as fromComponents from "./components";
@@ -16,8 +16,8 @@ import * as fromComponents from "./components";
   ],
   imports: [
     CommonModule,
-    Version100RoutingModule,
-    SharedModule.forRoot()
+    SharedModule.forRoot(),
+    Version100RoutingModule
   ]
 })
 export class Version100Module {}

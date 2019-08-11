@@ -1,9 +1,9 @@
-import {PostComponent} from "./post/post.component";
+import {SideNavigatorGroupComponent} from "./side-navigator-group/side-navigator-group.component";
 import {SideNavigatorComponent} from "./side-navigator/side-navigator.component";
-
-export * from "./post/post.component";
+import {PostComponent} from "./post/post.component";
 
 export const CONTAINERS: any[] = [
-    PostComponent,
-    SideNavigatorComponent
+    SideNavigatorGroupComponent,
+    SideNavigatorComponent,
+    PostComponent
 ];

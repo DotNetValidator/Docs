@@ -1,18 +1,5 @@
 <!-- Side Nav -->
-<app-side-navigator>
-
-    <ng-container class="groups">
-        <app-side-navigator-group *ngFor="let group of version.groups" [title]="group.title">
-
-            <ng-container class="links">
-                <app-side-navigator-item *ngFor="let post of group.posts" [title]="post.title" [route]="post.route">
-                </app-side-navigator-item>
-            </ng-container>
-
-        </app-side-navigator-group>
-    </ng-container>
-
-</app-side-navigator>
+<app-side-navigator [groups]="version.groups"></app-side-navigator>
 <!-- End Side Nav -->
 
 <!-- Post -->
