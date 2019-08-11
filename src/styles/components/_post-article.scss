@@ -3,4 +3,41 @@ app-post-article {
   article {
     margin-top: 1rem;
   }
+
+  a {
+    color: $theme-color;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .installation-list {
+    li {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .package-manager-install {
+    display: block;
+    ::before {
+      content: "PM> ";
+    }
+  }
+
+  .dotnet-cli-install {
+    display: block;
+    ::before {
+      content: "> ";
+    }
+  }
 }
