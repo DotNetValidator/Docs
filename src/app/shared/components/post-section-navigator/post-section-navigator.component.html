@@ -1,7 +1,6 @@
-<div class="section-nav">
-    <nav class="navbar">
-        <div class="nav-item">
-            <ng-content select=".sections"></ng-content>
-        </div>
-    </nav>
-</div>
+<nav class="navbar">
+    <div class="nav-item">
+        <a *ngFor="let section of sections" [routerLink]="route" [fragment]="section.id"
+            class="nav-link">{{section.title}}</a>
+    </div>
+</nav>

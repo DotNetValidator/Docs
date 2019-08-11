@@ -1,4 +1,4 @@
-<app-post [title]="'Getting Started'" [route]="route">
+<app-post *ngIf="post" [post]="post" [previous]="previous" [next]="next">
 
     <!-- Article -->
     <ng-container class="article">
@@ -168,14 +168,5 @@
 
     </ng-container>
     <!-- End Article -->
-
-    <!-- Post Section Nav -->
-    <ng-container class="sections">
-
-        <a routerLink="route" [class.active]="(activeSection | async) === 'section1'" [fragment]="'section1'"
-            class="nav-link" (click)="onSectionClick('section1')">Section 1</a>
-
-    </ng-container>
-    <!-- End Post Section Nav -->
 
 </app-post>

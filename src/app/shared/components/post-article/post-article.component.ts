@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import {Component, OnInit, Input} from "@angular/core";
 
 @Component({
   selector: "app-post-article",
@@ -6,4 +6,5 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./post-article.component.sass"]
 })
 export class PostArticleComponent {
+  @Input() title: string;
 }

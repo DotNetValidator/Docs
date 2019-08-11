@@ -1,4 +1,5 @@
-import {Component, OnInit, Input} from "@angular/core";
+import {Component, Input} from "@angular/core";
+import {IPost} from "../../models";
 
 @Component({
   selector: "app-post",
@@ -6,6 +7,8 @@ import {Component, OnInit, Input} from "@angular/core";
   styleUrls: ["./post.component.sass"]
 })
 export class PostComponent {
-  @Input() title: string;
   @Input() route: string;
+  @Input() post: IPost;
+  @Input() previous: IPost;
+  @Input() next: IPost;
 }

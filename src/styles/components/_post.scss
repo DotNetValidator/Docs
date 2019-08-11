@@ -1,11 +1,3 @@
 .post {
-  .post-header {
-    .post-header-text {
-      display: inline-block;
-    }
-
-    .edit-button {
-      float: right;
-    }
-  }
+  display: flex;
 }
