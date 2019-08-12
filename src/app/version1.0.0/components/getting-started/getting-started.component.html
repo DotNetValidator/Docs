@@ -4,15 +4,20 @@
     <ng-container class="article">
         <p>
             DotNet Validator is a <a href="https://dotnet.microsoft.com/" target="blank">.NET</a> library
-            that contains a set of utility methods which could be used to validate or
-            <a href="https://medium.com/@abderrahman.hamila/what-sanitize-mean-and-why-sanitize-in-code-data-5c68c9f76164"
-                target="blank">
-                sanitize
-            </a>
+            that contains a set of utility methods which could be used to <code>validate </code> or
+            <code>
+                <a href="https://medium.com/@abderrahman.hamila/what-sanitize-mean-and-why-sanitize-in-code-data-5c68c9f76164"
+                    target="blank">
+                    sanitize
+                </a>
+            </code>
             <a href="https://dotnet.microsoft.com/" target="blank">.NET</a> data-models.
         </p>
         <div>
-            <h2>Installation</h2>
+            <h2 class="section-heading">
+                Installation
+                <a id="installation" aria-hidden="true" class="section-heading-ref"></a>
+            </h2>
             <p>
                 DotNet Validator is a portable
                 <a href="https://docs.microsoft.com/en-us/dotnet/standard/net-standard" target="blank">
@@ -53,12 +58,45 @@
             </ul>
         </div>
         <div>
-            <h2>Basic guid</h2>
+            <h2 class="section-heading">
+                Basic guid
+                <a id="basic-guid" aria-hidden="true" class="section-heading-ref"></a>
+            </h2>
             <p>
                 Let's start with creating a new class called <code>Person</code>.
             </p>
             <pre class="code-block">
                 <code appHighlight>{{person1}}</code>
+            </pre>
+            <p>
+                Then create an object from the <code>Person</code> class.
+            </p>
+            <pre class="code-block">
+                    <code appHighlight>{{personObj1}}</code>
+            </pre>
+            <p>
+                Now let's validate the model so that the <code>Age</code> value
+                should be at least <strong>18</strong> years old.
+            </p>
+            <p>First we should add DotNet Validator library to our using area.</p>
+            <pre class="code-block">
+                <code appHighlight>{{usingLib}}</code>
+            </pre>
+            <pre class="code-block">
+                <code appHighlight>{{personValidate1}}</code>
+            </pre>
+            <p>
+                Let's put all code together.
+            </p>
+            <pre class="code-block">
+                <code appHighlight>{{personValidateWithError1}}</code>
+            </pre>
+            <p>
+                Or you can use the other method <code>Result()</code> to get a <code>dynamic</code> errors
+                <code>object</code>.
+            </p>
+            <pre class="code-block">
+                <code appHighlight>{{personValidateResult1}}</code>
             </pre>
         </div>
     </ng-container>

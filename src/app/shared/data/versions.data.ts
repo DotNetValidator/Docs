@@ -38,8 +38,75 @@ export const Versions: IVersion[] = [
                         route: resolveRoute(VERSIONS["1.0.0"], "getting-started"),
                         sections: [
                             {
-                                id: "section1",
-                                title: "Section 1"
+                                id: "installation",
+                                title: "Installation"
+                            },
+                            {
+                                id: "basic-guid",
+                                title: "Basic guid"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                title: "Name-Space",
+                posts: [
+                    {
+                        id: "validator-class",
+                        title: "Validator Class",
+                        route: resolveRoute(VERSIONS["1.0.0"], "validator-class"),
+                        sections: [
+                            {
+                                id: "members",
+                                title: "Members"
+                            },
+                            {
+                                id: "create",
+                                title: "Create(model, \"propertyName\")",
+                                isCode: true
+                            }
+                        ]
+                    },
+                    {
+                        id: "validation-error-class",
+                        title: "ValidatorError Class",
+                        route: resolveRoute(VERSIONS["1.0.0"], "validation-error-class"),
+                        sections: [
+                            {
+                                id: "members",
+                                title: "Members"
+                            },
+                            {
+                                id: "property-name",
+                                title: "PropertyName",
+                                isCode: true
+                            },
+                            {
+                                id: "error-messages",
+                                title: "ErrorMessages",
+                                isCode: true
+                            }
+                        ]
+                    },
+                    {
+                        id: "validation-result-class",
+                        title: "ValidatorResult Class",
+                        route: resolveRoute(VERSIONS["1.0.0"], "validation-result-class"),
+                        sections: [
+                            {
+                                id: "members",
+                                title: "Members"
+                            },
+                            {
+                                id: "validate",
+                                title: "Validate(validators)",
+                                isCode: true
+                            },
+                            {
+                                id: "result",
+                                title: "Result(validators)",
+                                isCode: true
                             }
                         ]
                     }

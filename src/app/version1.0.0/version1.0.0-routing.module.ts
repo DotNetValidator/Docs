@@ -12,6 +12,18 @@ const routes: Routes = [
       {
         path: "getting-started",
         component: fromComponents.GettingStartedComponent
+      },
+      {
+        path: "validator-class",
+        component: fromComponents.ValidatorClassComponent
+      },
+      {
+        path: "validation-error-class",
+        component: fromComponents.ValidationErrorClassComponent
+      },
+      {
+        path: "validation-result-class",
+        component: fromComponents.ValidationResultClassComponent
       }
     ]
   }
