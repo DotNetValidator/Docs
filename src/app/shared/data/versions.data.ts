@@ -235,6 +235,274 @@ export const Versions: IVersion[] = [
                             }
                         ]
                     },
+                    {
+                        id: "is-alpha-numeric-func",
+                        title: ".IsAlphaNumeric()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "is-alpha-numeric-func"),
+                        sections: [
+                            {
+                                id: "definition",
+                                title: "Definition"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            }
+                        ]
+                    },
+                    {
+                        id: "is-ascii-func",
+                        title: ".IsASCII()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "is-ascii-func"),
+                        sections: [
+                            {
+                                id: "definition",
+                                title: "Definition"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            }
+                        ]
+                    },
+                    {
+                        id: "is-base64-func",
+                        title: ".IsBase64()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "is-base64-func"),
+                        sections: [
+                            {
+                                id: "definition",
+                                title: "Definition"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            },
+                            {
+                                id: "example3",
+                                title: "Example 3"
+                            }
+                        ]
+                    },
+                    {
+                        id: "is-credit-card-func",
+                        title: ".IsCreditCard()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "is-credit-card-func"),
+                        sections: [
+                            {
+                                id: "definition",
+                                title: "Definition"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            },
+                            {
+                                id: "example3",
+                                title: "Example 3"
+                            }
+                        ]
+                    },
+                    {
+                        id: "is-email-func",
+                        title: ".IsEmail()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "is-email-func"),
+                        sections: [
+                            {
+                                id: "definition",
+                                title: "Definition"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            },
+                            {
+                                id: "example3",
+                                title: "Example 3"
+                            }
+                        ]
+                    },
+                    {
+                        id: "is-file-uri-func",
+                        title: ".IsFileUri()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "is-file-uri-func"),
+                        sections: [
+                            {
+                                id: "definition",
+                                title: "Definition"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            },
+                            {
+                                id: "example3",
+                                title: "Example 3"
+                            }
+                        ]
+                    },
+                    {
+                        id: "is-fqdn-func",
+                        title: ".IsFQDN()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "is-fqdn-func"),
+                        sections: [
+                            {
+                                id: "definition",
+                                title: "Definition"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            }
+                        ]
+                    },
+                    {
+                        id: "is-guid-func",
+                        title: ".IsGuid()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "is-guid-func"),
+                        sections: [
+                            {
+                                id: "definition",
+                                title: "Definition"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            },
+                            {
+                                id: "example3",
+                                title: "Example 3"
+                            }
+                        ]
+                    },
+                    {
+                        id: "is-in-range-func",
+                        title: ".IsInRange()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "is-in-range-func"),
+                        sections: [
+                            {
+                                id: "definitions",
+                                title: "Definitions"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            },
+                            {
+                                id: "example3",
+                                title: "Example 3"
+                            }
+                        ]
+                    },
+                    {
+                        id: "is-ip-func",
+                        title: ".IsIP()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "is-ip-func"),
+                        sections: [
+                            {
+                                id: "definitions",
+                                title: "Definitions"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            },
+                            {
+                                id: "example3",
+                                title: "Example 3"
+                            }
+                        ]
+                    },
                 ]
             }
         ]

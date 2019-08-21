@@ -12,6 +12,16 @@ import {ContainsFuncComponent} from "./validation/contains-func/contains-func.co
 import {CustomValidatorFuncComponent} from "./validation/custom-validator-func/custom-validator-func.component";
 import {EndsWithFuncComponent} from "./validation/ends-with-func/ends-with-func.component";
 import {IsAlphaFuncComponent} from "./validation/is-alpha-func/is-alpha-func.component";
+import {IsAlphaNumericFuncComponent} from "./validation/is-alpha-numeric-func/is-alpha-numeric-func.component";
+import {IsAsciiFuncComponent} from "./validation/is-ascii-func/is-ascii-func.component";
+import {IsBase64FuncComponent} from "./validation/is-base64-func/is-base64-func.component";
+import {IsCreditCardFuncComponent} from "./validation/is-credit-card-func/is-credit-card-func.component";
+import {IsEmailFuncComponent} from "./validation/is-email-func/is-email-func.component";
+import {IsFileUriFuncComponent} from "./validation/is-file-uri-func/is-file-uri-func.component";
+import {IsFqdnFuncComponent} from "./validation/is-fqdn-func/is-fqdn-func.component";
+import {IsGuidFuncComponent} from "./validation/is-guid-func/is-guid-func.component";
+import {IsInRangeFuncComponent} from "./validation/is-in-range-func/is-in-range-func.component";
+import {IsIpFuncComponent} from "./validation/is-ip-func/is-ip-func.component";
 
 /* Introduction */
 export * from "./introduction/getting-started/getting-started.component";
@@ -27,6 +37,16 @@ export * from "./validation/contains-func/contains-func.component";
 export * from "./validation/custom-validator-func/custom-validator-func.component";
 export * from "./validation/ends-with-func/ends-with-func.component";
 export * from "./validation/is-alpha-func/is-alpha-func.component";
+export * from "./validation/is-alpha-numeric-func/is-alpha-numeric-func.component";
+export * from "./validation/is-ascii-func/is-ascii-func.component";
+export * from "./validation/is-base64-func/is-base64-func.component";
+export * from "./validation/is-credit-card-func/is-credit-card-func.component";
+export * from "./validation/is-email-func/is-email-func.component";
+export * from "./validation/is-file-uri-func/is-file-uri-func.component";
+export * from "./validation/is-fqdn-func/is-fqdn-func.component";
+export * from "./validation/is-guid-func/is-guid-func.component";
+export * from "./validation/is-in-range-func/is-in-range-func.component";
+export * from "./validation/is-ip-func/is-ip-func.component";
 
 export const COMPONENTS: any[] = [
     GettingStartedComponent,
@@ -39,5 +59,15 @@ export const COMPONENTS: any[] = [
     ContainsFuncComponent,
     CustomValidatorFuncComponent,
     EndsWithFuncComponent,
-    IsAlphaFuncComponent
+    IsAlphaFuncComponent,
+    IsAlphaNumericFuncComponent,
+    IsAsciiFuncComponent,
+    IsBase64FuncComponent,
+    IsCreditCardFuncComponent,
+    IsEmailFuncComponent,
+    IsFileUriFuncComponent,
+    IsFqdnFuncComponent,
+    IsGuidFuncComponent,
+    IsInRangeFuncComponent,
+    IsIpFuncComponent,
 ];

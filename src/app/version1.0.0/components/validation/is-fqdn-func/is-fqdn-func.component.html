@@ -3,8 +3,8 @@
     <!-- Article -->
     <ng-container class="article">
         <p>
-            An <code>extension</code> validation <code>method</code> checks if the property's value ends with the given
-            string value.
+            An <code>extension</code> validation <code>method</code> checks if the property's value is a <a
+                href="https://kb.iu.edu/d/aiuv" target="blank">fully qualified domain name</a>.
         </p>
         <div>
             <h2 class="section-heading">
@@ -14,7 +14,7 @@
             <ul>
                 <li>
                     <h3>
-                        <code>.EndsWith(string str, string: errorMessage = null)</code>
+                        <code>.IsFQDN(string: errorMessage = null)</code>
                     </h3>
                     <h3>Supported data types :</h3>
                     <ul>
@@ -24,9 +24,6 @@
                     </ul>
                     <h3>Parameters :</h3>
                     <ul>
-                        <li>
-                            <code>str</code> : A <code>string</code> value that the property's value should ends with.
-                        </li>
                         <li>
                             <code>errorMessage</code> : An optional validation error message.
                             <br><i>If omitted, a default error message will be used</i>.
@@ -54,17 +51,18 @@
                         <a id="example1" aria-hidden="true" class="section-heading-ref"></a>
                     </h3>
                     <strong>To do : </strong>
-                    <i>Validate that the person's name should ends with the value `Harry`.
+                    <i>Validate that the person's domain-name is a
+                        <a href="https://kb.iu.edu/d/aiuv" target="blank">fully qualified domain name</a>.
                     </i>
                     <p>
                         Let's start with creating a new class called <code>Person</code>.
                     </p>
                     <pre class="code-block">
-                            <code appHighlight>{{person1}}</code>
-                        </pre>
+                        <code appHighlight>{{person1}}</code>
+                    </pre>
                     <pre class="code-block">
-                            <code appHighlight>{{example1}}</code>
-                        </pre>
+                        <code appHighlight>{{example1}}</code>
+                    </pre>
                 </li>
                 <li>
                     <h3>
@@ -72,11 +70,12 @@
                         <a id="example2" aria-hidden="true" class="section-heading-ref"></a>
                     </h3>
                     <strong>To do : </strong>
-                    <i>Validate that the person's name should ends with the value `Smith`.
+                    <i>Validate that the person's domain-name is a
+                        <a href="https://kb.iu.edu/d/aiuv" target="blank">fully qualified domain name</a>.
                     </i>
                     <pre class="code-block">
-                            <code appHighlight>{{example2}}</code>
-                        </pre>
+                        <code appHighlight>{{example2}}</code>
+                    </pre>
                 </li>
             </ul>
         </div>

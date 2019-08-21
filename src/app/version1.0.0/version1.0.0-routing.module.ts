@@ -48,6 +48,46 @@ const routes: Routes = [
       {
         path: "is-alpha-func",
         component: fromComponents.IsAlphaFuncComponent
+      },
+      {
+        path: "is-alpha-numeric-func",
+        component: fromComponents.IsAlphaNumericFuncComponent
+      },
+      {
+        path: "is-ascii-func",
+        component: fromComponents.IsAsciiFuncComponent
+      },
+      {
+        path: "is-base64-func",
+        component: fromComponents.IsBase64FuncComponent
+      },
+      {
+        path: "is-credit-card-func",
+        component: fromComponents.IsCreditCardFuncComponent
+      },
+      {
+        path: "is-email-func",
+        component: fromComponents.IsEmailFuncComponent
+      },
+      {
+        path: "is-file-uri-func",
+        component: fromComponents.IsFileUriFuncComponent
+      },
+      {
+        path: "is-fqdn-func",
+        component: fromComponents.IsFqdnFuncComponent
+      },
+      {
+        path: "is-guid-func",
+        component: fromComponents.IsGuidFuncComponent
+      },
+      {
+        path: "is-in-range-func",
+        component: fromComponents.IsInRangeFuncComponent
+      },
+      {
+        path: "is-ip-func",
+        component: fromComponents.IsIpFuncComponent
       }
     ]
   }

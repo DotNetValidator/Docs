@@ -2,14 +2,13 @@ import {Component, OnInit} from "@angular/core";
 import {IPost, DocService} from "../../../../shared";
 
 @Component({
-  selector: "app-contains-func",
-  templateUrl: "./contains-func.component.html",
-  styleUrls: ["./contains-func.component.sass"]
+  selector: "app-is-alpha-numeric-func",
+  templateUrl: "./is-alpha-numeric-func.component.html",
+  styleUrls: ["./is-alpha-numeric-func.component.sass"]
 })
-export class ContainsFuncComponent implements OnInit {
-
+export class IsAlphaNumericFuncComponent implements OnInit {
   versionId = "1.0.0";
-  postId = "contains-func";
+  postId = "is-alpha-numeric-func";
 
   post: IPost;
   previous: IPost;
@@ -26,12 +25,12 @@ export class ContainsFuncComponent implements OnInit {
   example1 = `
   var model = new Person
   {
-      Name = "Mister John smith",
+      Name = "John_Smith",
       Age = 25
   };
 
   var validator = Validator.Create(model, "Name")
-      .Contains("Mr", "Invalid person name.");
+      .IsAlpha("Invalid person name.");
 
   var errors = validator.Validate();
 
@@ -50,17 +49,17 @@ export class ContainsFuncComponent implements OnInit {
   example2 = `
   var model = new Person
   {
-      Name = "Mister John Smith",
+      Name = "JohnSmith100",
       Age = 25
   };
 
   var validator = Validator.Create(model, "Name")
-      .Contains(new [] { "Mister", "Mr", "Missis", "Mrs" }, "Invalid person Name.");
+      .IsAlpha("Invalid person name.");
 
   var errors = validator.Validate();
 
   /*
-     errors value will be null because the person's name contains the value \`Mister\`.
+     errors value will be null because the person's name contains alphabetical & numeric characters only.
   */`;
   //#endregion
 

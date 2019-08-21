@@ -3,8 +3,8 @@
     <!-- Article -->
     <ng-container class="article">
         <p>
-            An <code>extension</code> validation <code>method</code> checks if the property's value ends with the given
-            string value.
+            An <code>extension</code> validation <code>method</code> checks if the property's value is a valid global
+            unique identifier (Guid).
         </p>
         <div>
             <h2 class="section-heading">
@@ -14,7 +14,7 @@
             <ul>
                 <li>
                     <h3>
-                        <code>.EndsWith(string str, string: errorMessage = null)</code>
+                        <code>.IsGuid(string: errorMessage = null)</code>
                     </h3>
                     <h3>Supported data types :</h3>
                     <ul>
@@ -25,7 +25,9 @@
                     <h3>Parameters :</h3>
                     <ul>
                         <li>
-                            <code>str</code> : A <code>string</code> value that the property's value should ends with.
+                            <code>allowEmpty</code> : An optional flag that indicates whether empty guids are allowed or
+                            not.
+                            <br><i>By default it is not allowed</i>.
                         </li>
                         <li>
                             <code>errorMessage</code> : An optional validation error message.
@@ -54,17 +56,17 @@
                         <a id="example1" aria-hidden="true" class="section-heading-ref"></a>
                     </h3>
                     <strong>To do : </strong>
-                    <i>Validate that the person's name should ends with the value `Harry`.
+                    <i>Validate that the person's id is a valid global unique identifier (Guid).
                     </i>
                     <p>
                         Let's start with creating a new class called <code>Person</code>.
                     </p>
                     <pre class="code-block">
-                            <code appHighlight>{{person1}}</code>
-                        </pre>
+                        <code appHighlight>{{person1}}</code>
+                    </pre>
                     <pre class="code-block">
-                            <code appHighlight>{{example1}}</code>
-                        </pre>
+                        <code appHighlight>{{example1}}</code>
+                    </pre>
                 </li>
                 <li>
                     <h3>
@@ -72,11 +74,23 @@
                         <a id="example2" aria-hidden="true" class="section-heading-ref"></a>
                     </h3>
                     <strong>To do : </strong>
-                    <i>Validate that the person's name should ends with the value `Smith`.
+                    <i>Validate that the person's id is a valid global unique identifier (Guid).
                     </i>
                     <pre class="code-block">
-                            <code appHighlight>{{example2}}</code>
-                        </pre>
+                        <code appHighlight>{{example2}}</code>
+                    </pre>
+                </li>
+                <li>
+                    <h3>
+                        Example 3 :
+                        <a id="example3" aria-hidden="true" class="section-heading-ref"></a>
+                    </h3>
+                    <strong>To do : </strong>
+                    <i>Validate that the person's id is a valid global unique identifier (Guid) or an empty one.
+                    </i>
+                    <pre class="code-block">
+                        <code appHighlight>{{example3}}</code>
+                    </pre>
                 </li>
             </ul>
         </div>

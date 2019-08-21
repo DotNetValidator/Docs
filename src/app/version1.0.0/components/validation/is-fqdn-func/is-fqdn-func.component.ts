@@ -2,14 +2,14 @@ import {Component, OnInit} from "@angular/core";
 import {IPost, DocService} from "../../../../shared";
 
 @Component({
-  selector: "app-contains-func",
-  templateUrl: "./contains-func.component.html",
-  styleUrls: ["./contains-func.component.sass"]
+  selector: "app-is-fqdn-func",
+  templateUrl: "./is-fqdn-func.component.html",
+  styleUrls: ["./is-fqdn-func.component.sass"]
 })
-export class ContainsFuncComponent implements OnInit {
+export class IsFqdnFuncComponent implements OnInit {
 
   versionId = "1.0.0";
-  postId = "contains-func";
+  postId = "is-fqdn-func";
 
   post: IPost;
   previous: IPost;
@@ -20,18 +20,18 @@ export class ContainsFuncComponent implements OnInit {
   public class Person
   {
       public string Name { get; set; }
-      public int Age { get; set; }
+      public string DomainName { get; set; }
   }`;
 
   example1 = `
   var model = new Person
   {
-      Name = "Mister John smith",
-      Age = 25
+      Name = "John Smith",
+      DomainName = "smith.com"
   };
 
-  var validator = Validator.Create(model, "Name")
-      .Contains("Mr", "Invalid person name.");
+  var validator = Validator.Create(model, "DomainName")
+      .IsFQDN("Invalid domain name.");
 
   var errors = validator.Validate();
 
@@ -40,8 +40,8 @@ export class ContainsFuncComponent implements OnInit {
 
      [
        {
-         Name = [
-           "Invalid person name."
+         DomainName = [
+           "Invalid domain name."
          ]
        }
      ]
@@ -50,17 +50,17 @@ export class ContainsFuncComponent implements OnInit {
   example2 = `
   var model = new Person
   {
-      Name = "Mister John Smith",
-      Age = 25
+      Name = "John Smith",
+      DomainName = "john.smith.com"
   };
 
-  var validator = Validator.Create(model, "Name")
-      .Contains(new [] { "Mister", "Mr", "Missis", "Mrs" }, "Invalid person Name.");
+  var validator = Validator.Create(model, "DomainName")
+      .IsFQDN("Invalid domain name.");
 
   var errors = validator.Validate();
 
   /*
-     errors value will be null because the person's name contains the value \`Mister\`.
+     errors value will be null because the person's domain-name is a valid fully qualified domain name.
   */`;
   //#endregion
 
