@@ -1,5 +1,5 @@
 import {Component, OnInit} from "@angular/core";
-import {IPost, DocService} from "../../../shared";
+import {IPost, DocService} from "../../../../shared";
 
 @Component({
   selector: "app-getting-started",

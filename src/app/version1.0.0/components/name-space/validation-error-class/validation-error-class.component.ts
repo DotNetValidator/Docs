@@ -1,15 +1,15 @@
 import {Component, OnInit} from "@angular/core";
-import {IPost, DocService} from "../../../shared";
+import {IPost, DocService} from "../../../../shared";
 
 @Component({
-  selector: "app-validation-result-class",
-  templateUrl: "./validation-result-class.component.html",
-  styleUrls: ["./validation-result-class.component.sass"]
+  selector: "app-validation-error-class",
+  templateUrl: "./validation-error-class.component.html",
+  styleUrls: ["./validation-error-class.component.sass"]
 })
-export class ValidationResultClassComponent implements OnInit {
+export class ValidationErrorClassComponent implements OnInit {
 
   versionId = "1.0.0";
-  postId = "validation-result-class";
+  postId = "validation-error-class";
 
   post: IPost;
   previous: IPost;

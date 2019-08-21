@@ -15,7 +15,7 @@ export interface IPostSectionItem {
     title: string;
 
     /**
-     * Indicates whether is the title property is a code or not
+     * Indicates whether is the title property is a code or not.
      */
     isCode?: boolean;
 }

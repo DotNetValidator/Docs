@@ -111,6 +111,131 @@ export const Versions: IVersion[] = [
                         ]
                     }
                 ]
+            },
+            {
+                title: "Validation",
+                posts: [
+                    {
+                        id: "black-list-func",
+                        title: ".BlackList()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "black-list-func"),
+                        sections: [
+                            {
+                                id: "definition",
+                                title: "Definition"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            }
+                        ]
+                    },
+                    {
+                        id: "contains-func",
+                        title: ".Contains()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "contains-func"),
+                        sections: [
+                            {
+                                id: "definitions",
+                                title: "Definitions"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            }
+                        ]
+                    },
+                    {
+                        id: "custom-validator-func",
+                        title: ".CustomValidator()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "custom-validator-func"),
+                        sections: [
+                            {
+                                id: "definitions",
+                                title: "Definitions"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            }
+                        ]
+                    },
+                    {
+                        id: "ends-with-func",
+                        title: ".EndsWith()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "ends-with-func"),
+                        sections: [
+                            {
+                                id: "definition",
+                                title: "Definition"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            }
+                        ]
+                    },
+                    {
+                        id: "is-alpha-func",
+                        title: ".IsAlpha()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "is-alpha-func"),
+                        sections: [
+                            {
+                                id: "definition",
+                                title: "Definition"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            }
+                        ]
+                    },
+                ]
             }
         ]
     }
