@@ -88,6 +88,18 @@ const routes: Routes = [
       {
         path: "is-ip-func",
         component: fromComponents.IsIpFuncComponent
+      },
+      {
+        path: "is-isbn-func",
+        component: fromComponents.IsIsbnFuncComponent
+      },
+      {
+        path: "is-isrc-func",
+        component: fromComponents.IsIsrcFuncComponent
+      },
+      {
+        path: "is-issn-func",
+        component: fromComponents.IsIssnFuncComponent
       }
     ]
   }

@@ -22,6 +22,9 @@ import {IsFqdnFuncComponent} from "./validation/is-fqdn-func/is-fqdn-func.compon
 import {IsGuidFuncComponent} from "./validation/is-guid-func/is-guid-func.component";
 import {IsInRangeFuncComponent} from "./validation/is-in-range-func/is-in-range-func.component";
 import {IsIpFuncComponent} from "./validation/is-ip-func/is-ip-func.component";
+import {IsIsbnFuncComponent} from "./validation/is-isbn-func/is-isbn-func.component";
+import {IsIsrcFuncComponent} from "./validation/is-isrc-func/is-isrc-func.component";
+import {IsIssnFuncComponent} from "./validation/is-issn-func/is-issn-func.component";
 
 /* Introduction */
 export * from "./introduction/getting-started/getting-started.component";
@@ -47,6 +50,9 @@ export * from "./validation/is-fqdn-func/is-fqdn-func.component";
 export * from "./validation/is-guid-func/is-guid-func.component";
 export * from "./validation/is-in-range-func/is-in-range-func.component";
 export * from "./validation/is-ip-func/is-ip-func.component";
+export * from "./validation/is-isbn-func/is-isbn-func.component";
+export * from "./validation/is-isrc-func/is-isrc-func.component";
+export * from "./validation/is-issn-func/is-issn-func.component";
 
 export const COMPONENTS: any[] = [
     GettingStartedComponent,
@@ -70,4 +76,7 @@ export const COMPONENTS: any[] = [
     IsGuidFuncComponent,
     IsInRangeFuncComponent,
     IsIpFuncComponent,
+    IsIsbnFuncComponent,
+    IsIsrcFuncComponent,
+    IsIssnFuncComponent,
 ];

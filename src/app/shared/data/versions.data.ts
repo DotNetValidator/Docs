@@ -503,6 +503,78 @@ export const Versions: IVersion[] = [
                             }
                         ]
                     },
+                    {
+                        id: "is-isbn-func",
+                        title: ".IsISBN()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "is-isbn-func"),
+                        sections: [
+                            {
+                                id: "definition",
+                                title: "Definition"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            }
+                        ]
+                    },
+                    {
+                        id: "is-isrc-func",
+                        title: ".IsISRC()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "is-isrc-func"),
+                        sections: [
+                            {
+                                id: "definition",
+                                title: "Definition"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            }
+                        ]
+                    },
+                    {
+                        id: "is-issn-func",
+                        title: ".IsISSN()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "is-issn-func"),
+                        sections: [
+                            {
+                                id: "definition",
+                                title: "Definition"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            }
+                        ]
+                    },
                 ]
             }
         ]
