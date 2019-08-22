@@ -575,6 +575,374 @@ export const Versions: IVersion[] = [
                             }
                         ]
                     },
+                    {
+                        id: "is-lat-lang-func",
+                        title: ".IsLatLang()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "is-lat-lang-func"),
+                        sections: [
+                            {
+                                id: "definition",
+                                title: "Definition"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            }
+                        ]
+                    },
+                    {
+                        id: "is-length-func",
+                        title: ".IsLength()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "is-length-func"),
+                        sections: [
+                            {
+                                id: "definition",
+                                title: "Definition"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            }
+                        ]
+                    },
+                    {
+                        id: "is-mac-address-func",
+                        title: ".IsMACAddress()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "is-mac-address-func"),
+                        sections: [
+                            {
+                                id: "definition",
+                                title: "Definition"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            }
+                        ]
+                    },
+                    {
+                        id: "is-not-null-func",
+                        title: ".IsNotNull()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "is-not-null-func"),
+                        sections: [
+                            {
+                                id: "definition",
+                                title: "Definition"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            }
+                        ]
+                    },
+                    {
+                        id: "is-port-func",
+                        title: ".IsPort()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "is-port-func"),
+                        sections: [
+                            {
+                                id: "definition",
+                                title: "Definition"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            }
+                        ]
+                    },
+                    {
+                        id: "is-postal-code-func",
+                        title: ".IsPostalCode()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "is-postal-code-func"),
+                        sections: [
+                            {
+                                id: "definition",
+                                title: "Definition"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            }
+                        ]
+                    },
+                    {
+                        id: "is-url-func",
+                        title: ".IsUrl()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "is-url-func"),
+                        sections: [
+                            {
+                                id: "definition",
+                                title: "Definition"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            }
+                        ]
+                    },
+                    {
+                        id: "matches-func",
+                        title: ".Matches()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "matches-func"),
+                        sections: [
+                            {
+                                id: "definition",
+                                title: "Definition"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            }
+                        ]
+                    },
+                    {
+                        id: "max-func",
+                        title: ".Max()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "max-func"),
+                        sections: [
+                            {
+                                id: "definitions",
+                                title: "Definitions"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            },
+                            {
+                                id: "example3",
+                                title: "Example 3"
+                            }
+                        ]
+                    },
+                    {
+                        id: "max-length-func",
+                        title: ".MaxLength()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "max-length-func"),
+                        sections: [
+                            {
+                                id: "definition",
+                                title: "Definition"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            }
+                        ]
+                    },
+                    {
+                        id: "min-func",
+                        title: ".Min()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "min-func"),
+                        sections: [
+                            {
+                                id: "definitions",
+                                title: "Definitions"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            },
+                            {
+                                id: "example3",
+                                title: "Example 3"
+                            }
+                        ]
+                    },
+                    {
+                        id: "min-length-func",
+                        title: ".MinLength()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "min-length-func"),
+                        sections: [
+                            {
+                                id: "definition",
+                                title: "Definition"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            }
+                        ]
+                    },
+                    {
+                        id: "optional-func",
+                        title: ".Optional()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "optional-func"),
+                        sections: [
+                            {
+                                id: "definition",
+                                title: "Definition"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            }
+                        ]
+                    },
+                    {
+                        id: "starts-with-func",
+                        title: ".StartsWith()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "starts-with-func"),
+                        sections: [
+                            {
+                                id: "definition",
+                                title: "Definition"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            }
+                        ]
+                    },
+                    {
+                        id: "white-list-func",
+                        title: ".WhiteList()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "white-list-func"),
+                        sections: [
+                            {
+                                id: "definition",
+                                title: "Definition"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            }
+                        ]
+                    },
                 ]
             }
         ]

@@ -25,6 +25,21 @@ import {IsIpFuncComponent} from "./validation/is-ip-func/is-ip-func.component";
 import {IsIsbnFuncComponent} from "./validation/is-isbn-func/is-isbn-func.component";
 import {IsIsrcFuncComponent} from "./validation/is-isrc-func/is-isrc-func.component";
 import {IsIssnFuncComponent} from "./validation/is-issn-func/is-issn-func.component";
+import {IsLatLangFuncComponent} from "./validation/is-lat-lang-func/is-lat-lang-func.component";
+import {IsLengthFuncComponent} from "./validation/is-length-func/is-length-func.component";
+import {IsMacAddressFuncComponent} from "./validation/is-mac-address-func/is-mac-address-func.component";
+import {IsNotNullFuncComponent} from "./validation/is-not-null-func/is-not-null-func.component";
+import {IsPortFuncComponent} from "./validation/is-port-func/is-port-func.component";
+import {IsPostalCodeFuncComponent} from "./validation/is-postal-code-func/is-postal-code-func.component";
+import {IsUrlFuncComponent} from "./validation/is-url-func/is-url-func.component";
+import {MatchesFuncComponent} from "./validation/matches-func/matches-func.component";
+import {MaxFuncComponent} from "./validation/max-func/max-func.component";
+import {MaxLengthFuncComponent} from "./validation/max-length-func/max-length-func.component";
+import {MinFuncComponent} from "./validation/min-func/min-func.component";
+import {MinLengthFuncComponent} from "./validation/min-length-func/min-length-func.component";
+import {OptionalFuncComponent} from "./validation/optional-func/optional-func.component";
+import {StartsWithFuncComponent} from "./validation/starts-with-func/starts-with-func.component";
+import {WhiteListFuncComponent} from "./validation/white-list-func/white-list-func.component";
 
 /* Introduction */
 export * from "./introduction/getting-started/getting-started.component";
@@ -53,6 +68,21 @@ export * from "./validation/is-ip-func/is-ip-func.component";
 export * from "./validation/is-isbn-func/is-isbn-func.component";
 export * from "./validation/is-isrc-func/is-isrc-func.component";
 export * from "./validation/is-issn-func/is-issn-func.component";
+export * from "./validation/is-lat-lang-func/is-lat-lang-func.component";
+export * from "./validation/is-length-func/is-length-func.component";
+export * from "./validation/is-mac-address-func/is-mac-address-func.component";
+export * from "./validation/is-not-null-func/is-not-null-func.component";
+export * from "./validation/is-port-func/is-port-func.component";
+export * from "./validation/is-postal-code-func/is-postal-code-func.component";
+export * from "./validation/is-url-func/is-url-func.component";
+export * from "./validation/matches-func/matches-func.component";
+export * from "./validation/max-func/max-func.component";
+export * from "./validation/max-length-func/max-length-func.component";
+export * from "./validation/min-func/min-func.component";
+export * from "./validation/min-length-func/min-length-func.component";
+export * from "./validation/optional-func/optional-func.component";
+export * from "./validation/starts-with-func/starts-with-func.component";
+export * from "./validation/white-list-func/white-list-func.component";
 
 export const COMPONENTS: any[] = [
     GettingStartedComponent,
@@ -79,4 +109,19 @@ export const COMPONENTS: any[] = [
     IsIsbnFuncComponent,
     IsIsrcFuncComponent,
     IsIssnFuncComponent,
+    IsLatLangFuncComponent,
+    IsLengthFuncComponent,
+    IsMacAddressFuncComponent,
+    IsNotNullFuncComponent,
+    IsPortFuncComponent,
+    IsPostalCodeFuncComponent,
+    IsUrlFuncComponent,
+    MatchesFuncComponent,
+    MaxFuncComponent,
+    MaxLengthFuncComponent,
+    MinFuncComponent,
+    MinLengthFuncComponent,
+    OptionalFuncComponent,
+    StartsWithFuncComponent,
+    WhiteListFuncComponent,
 ];

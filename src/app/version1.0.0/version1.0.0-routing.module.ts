@@ -100,7 +100,67 @@ const routes: Routes = [
       {
         path: "is-issn-func",
         component: fromComponents.IsIssnFuncComponent
-      }
+      },
+      {
+        path: "is-lat-lang-func",
+        component: fromComponents.IsLatLangFuncComponent
+      },
+      {
+        path: "is-length-func",
+        component: fromComponents.IsLengthFuncComponent
+      },
+      {
+        path: "is-mac-address-func",
+        component: fromComponents.IsMacAddressFuncComponent
+      },
+      {
+        path: "is-not-null-func",
+        component: fromComponents.IsNotNullFuncComponent
+      },
+      {
+        path: "is-port-func",
+        component: fromComponents.IsPortFuncComponent
+      },
+      {
+        path: "is-postal-code-func",
+        component: fromComponents.IsPostalCodeFuncComponent
+      },
+      {
+        path: "is-url-func",
+        component: fromComponents.IsUrlFuncComponent
+      },
+      {
+        path: "matches-func",
+        component: fromComponents.MatchesFuncComponent
+      },
+      {
+        path: "max-func",
+        component: fromComponents.MaxFuncComponent
+      },
+      {
+        path: "max-length-func",
+        component: fromComponents.MaxLengthFuncComponent
+      },
+      {
+        path: "min-func",
+        component: fromComponents.MinFuncComponent
+      },
+      {
+        path: "min-length-func",
+        component: fromComponents.MinLengthFuncComponent
+      },
+      {
+        path: "optional-func",
+        component: fromComponents.OptionalFuncComponent
+      },
+      {
+        path: "starts-with-func",
+        component: fromComponents.StartsWithFuncComponent
+      },
+      {
+        path: "white-list-func",
+        component: fromComponents.WhiteListFuncComponent
+      },
     ]
   }
 ];

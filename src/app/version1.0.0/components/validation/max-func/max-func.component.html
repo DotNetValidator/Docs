@@ -3,7 +3,8 @@
     <!-- Article -->
     <ng-container class="article">
         <p>
-            An <code>extension</code> validation <code>method</code> checks if the property's value is in a given range.
+            An <code>extension</code> validation <code>method</code> checks if the property's value is not more than the
+            given maximum value.
         </p>
         <div>
             <h2 class="section-heading">
@@ -13,7 +14,7 @@
             <ol>
                 <li>
                     <h3>
-                        <code>.IsInRange(double minValue, double maxValue, string: errorMessage = null)</code>
+                        <code>.Max(double maxValue, string: errorMessage = null)</code>
                     </h3>
                     <h3>Supported data types :</h3>
                     <ul>
@@ -45,9 +46,6 @@
                     <h3>Parameters :</h3>
                     <ul>
                         <li>
-                            <code>minValue</code> : A numeric minimum value.
-                        </li>
-                        <li>
                             <code>maxValue</code> : A numeric maximum value.
                         </li>
                         <li>
@@ -65,7 +63,7 @@
                 </li>
                 <li>
                     <h3>
-                        <code>.IsInRange(DateTime minDateTime, DateTime maxDateTime, string: errorMessage = null)</code>
+                        <code>.Max(DateTime maxDateTime, string: errorMessage = null)</code>
                     </h3>
                     <h3>Supported data types :</h3>
                     <ul>
@@ -75,9 +73,6 @@
                     </ul>
                     <h3>Parameters :</h3>
                     <ul>
-                        <li>
-                            <code>minDateTime</code> : A minimum date-time value.
-                        </li>
                         <li>
                             <code>maxDateTime</code> : A maximum date-time value.
                         </li>
@@ -96,7 +91,7 @@
                 </li>
                 <li>
                     <h3>
-                        <code>.IsInRange(TimeSpan minTime, TimeSpan maxTime, string: errorMessage = null)</code>
+                        <code>.Max(TimeSpan maxTime, string: errorMessage = null)</code>
                     </h3>
                     <h3>Supported data types :</h3>
                     <ul>
@@ -106,9 +101,6 @@
                     </ul>
                     <h3>Parameters :</h3>
                     <ul>
-                        <li>
-                            <code>minTime</code> : A minimum time-span value.
-                        </li>
                         <li>
                             <code>maxTime</code> : A maximum time-span value.
                         </li>
@@ -139,7 +131,7 @@
                         <a id="example1" aria-hidden="true" class="section-heading-ref"></a>
                     </h3>
                     <strong>To do : </strong>
-                    <i>Validate that the person's age is in range 30 and 35.
+                    <i>Validate that the person's age is not more than 25 years.
                     </i>
                     <p>
                         Let's start with creating a new class called <code>Person</code>.
@@ -157,7 +149,7 @@
                         <a id="example2" aria-hidden="true" class="section-heading-ref"></a>
                     </h3>
                     <strong>To do : </strong>
-                    <i>Validate that the person's graduation-date is in range "2010-06-01" and "2015-06-01".
+                    <i>Validate that the person's graduation-date is not after "2015-06-01".
                     </i>
                     <pre class="code-block">
                         <code appHighlight>{{example2}}</code>
@@ -169,7 +161,7 @@
                         <a id="example3" aria-hidden="true" class="section-heading-ref"></a>
                     </h3>
                     <strong>To do : </strong>
-                    <i>Validate that the person's available-time is in range "08:00"AM and "10:00"AM.
+                    <i>Validate that the person's available-time is not after "08:00"AM.
                     </i>
                     <pre class="code-block">
                         <code appHighlight>{{example3}}</code>
