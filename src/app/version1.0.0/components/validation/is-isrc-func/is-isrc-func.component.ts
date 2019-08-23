@@ -39,11 +39,12 @@ export class IsIsrcFuncComponent implements OnInit {
      errors value will be a List<ValidationError>
 
      [
-       {
-        SongRecordingCode = [
-           "Invalid song recording code."
-         ]
-       }
+        {
+          PropertyName = "SongRecordingCode",
+          ErrorMessages = [
+            "Invalid song recording code."
+          ]
+        }
      ]
   */`;
 

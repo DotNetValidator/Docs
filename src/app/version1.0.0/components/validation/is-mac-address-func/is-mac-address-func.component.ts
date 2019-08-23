@@ -39,11 +39,12 @@ export class IsMacAddressFuncComponent implements OnInit {
      errors value will be a List<ValidationError>
 
      [
-       {
-        PCMacAddress = [
-           "Invalid mac-address."
-         ]
-       }
+        {
+          PropertyName = "PCMacAddress",
+          ErrorMessages = [
+            "Invalid mac-address."
+          ]
+        }
      ]
   */`;
 

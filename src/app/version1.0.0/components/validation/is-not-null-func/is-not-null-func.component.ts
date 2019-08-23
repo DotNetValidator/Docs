@@ -37,11 +37,12 @@ export class IsNotNullFuncComponent implements OnInit {
      errors value will be a List<ValidationError>
 
      [
-       {
-        Name = [
-           "Name can't be null."
-         ]
-       }
+        {
+          PropertyName = "Name",
+          ErrorMessages = [
+            "Name can't be null."
+          ]
+        }
      ]
   */`;
 

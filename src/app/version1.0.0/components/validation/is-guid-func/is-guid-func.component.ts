@@ -39,11 +39,12 @@ export class IsGuidFuncComponent implements OnInit {
      errors value will be a List<ValidationError>
 
      [
-       {
-         Id = [
-           "Invalid id."
-         ]
-       }
+        {
+          PropertyName = "Id",
+          ErrorMessages = [
+            "Invalid id."
+          ]
+        }
      ]
   */`;
 

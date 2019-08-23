@@ -39,11 +39,12 @@ export class IsPortFuncComponent implements OnInit {
      errors value will be a List<ValidationError>
 
      [
-       {
-        DefaultPort = [
-           "Invalid port number."
-         ]
-       }
+        {
+          PropertyName = "DefaultPort",
+          ErrorMessages = [
+            "Invalid port number."
+          ]
+        }
      ]
   */`;
 

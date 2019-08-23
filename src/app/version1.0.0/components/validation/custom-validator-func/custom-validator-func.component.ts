@@ -46,11 +46,12 @@ export class CustomValidatorFuncComponent implements OnInit {
      errors value will be a List<ValidationError>
 
      [
-       {
-         Country = [
-           "Country shouldn't be null."
-         ]
-       }
+        {
+          PropertyName = "Country",
+          ErrorMessages = [
+            "Country shouldn't be null."
+          ]
+        }
      ]
   */`;
 

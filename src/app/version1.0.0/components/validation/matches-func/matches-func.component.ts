@@ -37,11 +37,12 @@ export class MatchesFuncComponent implements OnInit {
      errors value will be a List<ValidationError>
 
      [
-       {
-        Name = [
-           "Invalid name."
-         ]
-       }
+        {
+          PropertyName = "Name",
+          ErrorMessages = [
+            "Invalid name."
+          ]
+        }
      ]
   */`;
 

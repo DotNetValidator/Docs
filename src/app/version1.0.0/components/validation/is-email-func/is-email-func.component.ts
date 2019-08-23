@@ -38,12 +38,13 @@ export class IsEmailFuncComponent implements OnInit {
      errors value will be a List<ValidationError>
 
      [
-       {
-         Email = [
-           "Invalid email."
-         ]
-       }
-     ]
+        {
+          PropertyName = "Email",
+          ErrorMessages = [
+            "Invalid email."
+          ]
+        }
+      ]
   */`;
 
   example2 = `

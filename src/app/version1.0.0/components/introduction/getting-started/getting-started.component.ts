@@ -63,9 +63,10 @@ export class GettingStartedComponent implements OnInit {
 
      [
        {
-         Age = [
-           "Person age must be at least 18 years old."
-         ]
+          PropertyName = "Age",
+          ErrorMessages = [
+            "Person age must be at least 18 years old."
+          ]
        }
      ]
   */`;

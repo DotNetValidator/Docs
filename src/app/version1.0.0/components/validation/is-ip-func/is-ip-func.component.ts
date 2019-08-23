@@ -39,11 +39,12 @@ export class IsIpFuncComponent implements OnInit {
      errors value will be a List<ValidationError>
 
      [
-       {
-        DeviceIP = [
-           "Invalid device-ip."
-         ]
-       }
+        {
+          PropertyName = "DeviceIP",
+          ErrorMessages = [
+            "Invalid device-ip."
+          ]
+        }
      ]
   */`;
 
@@ -63,11 +64,12 @@ export class IsIpFuncComponent implements OnInit {
      errors value will be a List<ValidationError>
 
      [
-       {
-        DeviceIP = [
-           "Invalid device-ip."
-         ]
-       }
+        {
+          PropertyName = "DeviceIP",
+          ErrorMessages = [
+            "Invalid device-ip."
+          ]
+        }
      ]
   */`;
 
@@ -87,11 +89,12 @@ export class IsIpFuncComponent implements OnInit {
      errors value will be a List<ValidationError>
 
      [
-       {
-        DeviceIP = [
-           "Invalid device-ip."
-         ]
-       }
+        {
+          PropertyName = "DeviceIP",
+          ErrorMessages = [
+            "Invalid device-ip."
+          ]
+        }
      ]
   */`;
   //#endregion

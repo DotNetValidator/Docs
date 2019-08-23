@@ -38,12 +38,13 @@ export class IsBase64FuncComponent implements OnInit {
      errors value will be a List<ValidationError>
 
      [
-       {
-         Avatar = [
-           "Invalid avatar."
-         ]
-       }
-     ]
+        {
+          PropertyName = "Avatar",
+          ErrorMessages = [
+            "Invalid avatar."
+          ]
+        }
+      ]
   */`;
 
   example2 = `

@@ -38,12 +38,13 @@ export class IsAlphaFuncComponent implements OnInit {
      errors value will be a List<ValidationError>
 
      [
-       {
-         Name = [
-           "Invalid person name."
-         ]
-       }
-     ]
+        {
+          PropertyName = "Name",
+          ErrorMessages = [
+            "Invalid person name."
+          ]
+        }
+      ]
   */`;
 
   example2 = `

@@ -39,12 +39,13 @@ export class IsFqdnFuncComponent implements OnInit {
      errors value will be a List<ValidationError>
 
      [
-       {
-         DomainName = [
-           "Invalid domain name."
-         ]
-       }
-     ]
+        {
+          PropertyName = "DomainName",
+          ErrorMessages = [
+            "Invalid domain name."
+          ]
+        }
+      ]
   */`;
 
   example2 = `

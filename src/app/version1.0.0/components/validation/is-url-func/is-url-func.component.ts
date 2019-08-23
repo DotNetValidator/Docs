@@ -39,11 +39,12 @@ export class IsUrlFuncComponent implements OnInit {
      errors value will be a List<ValidationError>
 
      [
-       {
-        LinkedInProfile = [
-           "Invalid url."
-         ]
-       }
+        {
+          PropertyName = "LinkedInProfile",
+          ErrorMessages = [
+            "Invalid url."
+          ]
+        }
      ]
   */`;
 

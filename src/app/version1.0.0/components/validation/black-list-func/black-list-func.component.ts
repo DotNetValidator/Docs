@@ -47,9 +47,10 @@ export class BlackListFuncComponent implements OnInit {
 
      [
        {
-         Name = [
-           "Invalid person name."
-         ]
+          PropertyName = "Name",
+          ErrorMessages = [
+            "Invalid person name."
+          ]
        }
      ]
   */`;

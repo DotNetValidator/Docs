@@ -39,12 +39,13 @@ export class IsPostalCodeFuncComponent implements OnInit {
      errors value will be a List<ValidationError>
 
      [
-       {
-        PostalCode = [
-           "Invalid postal code."
-         ]
-       }
-     ]
+        {
+          PropertyName = "PostalCode",
+          ErrorMessages = [
+            "Invalid postal code."
+          ]
+        }
+      ]
   */`;
 
   example2 = `

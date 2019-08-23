@@ -41,11 +41,12 @@ export class IsInRangeFuncComponent implements OnInit {
      errors value will be a List<ValidationError>
 
      [
-       {
-         Age = [
-           "Invalid age."
-         ]
-       }
+        {
+          PropertyName = "Age",
+          ErrorMessages = [
+            "Invalid age."
+          ]
+        }
      ]
   */`;
 
@@ -65,12 +66,13 @@ export class IsInRangeFuncComponent implements OnInit {
      errors value will be a List<ValidationError>
 
      [
-       {
-         GraduationDate = [
-           "Invalid graduation-date."
-         ]
-       }
-     ]
+        {
+          PropertyName = "GraduationDate",
+          ErrorMessages = [
+            "Invalid graduation-date."
+          ]
+        }
+      ]
   */`;
 
   example3 = `
@@ -89,12 +91,13 @@ export class IsInRangeFuncComponent implements OnInit {
      errors value will be a List<ValidationError>
 
      [
-       {
-         AvailableTime = [
-           "Invalid available-time."
-         ]
-       }
-     ]
+        {
+          PropertyName = "AvailableTime",
+          ErrorMessages = [
+            "Invalid available-time."
+          ]
+        }
+      ]
   */`;
   //#endregion
 

@@ -38,12 +38,13 @@ export class IsCreditCardFuncComponent implements OnInit {
      errors value will be a List<ValidationError>
 
      [
-       {
-         CreditCardNum = [
-           "Invalid credit card number."
-         ]
-       }
-     ]
+        {
+          PropertyName = "CreditCardNum",
+          ErrorMessages = [
+            "Invalid credit card number."
+          ]
+        }
+      ]
   */`;
 
   example2 = `

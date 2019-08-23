@@ -37,11 +37,12 @@ export class MinLengthFuncComponent implements OnInit {
      errors value will be a List<ValidationError>
 
      [
-       {
-        Name = [
-           "Invalid length."
-         ]
-       }
+        {
+          PropertyName = "Name",
+          ErrorMessages = [
+            "Invalid length."
+          ]
+        }
      ]
   */`;
 

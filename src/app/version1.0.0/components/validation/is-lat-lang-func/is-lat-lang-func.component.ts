@@ -39,11 +39,12 @@ export class IsLatLangFuncComponent implements OnInit {
      errors value will be a List<ValidationError>
 
      [
-       {
-        Location = [
-           "Invalid location."
-         ]
-       }
+        {
+          PropertyName = "Location",
+          ErrorMessages = [
+            "Invalid location."
+          ]
+        }
      ]
   */`;
 

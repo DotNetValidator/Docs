@@ -38,12 +38,13 @@ export class IsFileUriFuncComponent implements OnInit {
      errors value will be a List<ValidationError>
 
      [
-       {
-         Avatar = [
-           "Invalid avatar url."
-         ]
-       }
-     ]
+        {
+          PropertyName = "Avatar",
+          ErrorMessages = [
+            "Invalid avatar url."
+          ]
+        }
+      ]
   */`;
 
   example2 = `

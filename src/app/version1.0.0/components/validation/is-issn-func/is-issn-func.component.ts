@@ -39,11 +39,12 @@ export class IsIssnFuncComponent implements OnInit {
      errors value will be a List<ValidationError>
 
      [
-       {
-        BookSerialNum = [
-           "Invalid book serial number."
-         ]
-       }
+        {
+          PropertyName = "BookSerialNum",
+          ErrorMessages = [
+            "Invalid book serial number."
+          ]
+        }
      ]
   */`;
 
