@@ -161,6 +161,48 @@ const routes: Routes = [
         path: "white-list-func",
         component: fromComponents.WhiteListFuncComponent
       },
+
+      {
+        path: "sanitization-introduction",
+        component: fromComponents.SanitizationIntroComponent
+      },
+      {
+        path: "custom-sanitizer-func",
+        component: fromComponents.CustomSanitizerFuncComponent
+      },
+      {
+        path: "to-lower-func",
+        component: fromComponents.ToLowerFuncComponent
+      },
+      {
+        path: "to-upper-func",
+        component: fromComponents.ToUpperFuncComponent
+      },
+      {
+        path: "to-utc-func",
+        component: fromComponents.ToUtcFuncComponent
+      },
+      {
+        path: "trim-end-func",
+        component: fromComponents.TrimEndFuncComponent
+      },
+      {
+        path: "trim-func",
+        component: fromComponents.TrimFuncComponent
+      },
+      {
+        path: "trim-start-func",
+        component: fromComponents.TrimStartFuncComponent
+      },
+
+      {
+        path: "full-model-validation",
+        component: fromComponents.FullModelValidationComponent
+      },
+      {
+        path: "validate-vs-result",
+        component: fromComponents.ValidateVsResultComponent
+      },
     ]
   }
 ];

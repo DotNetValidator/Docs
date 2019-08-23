@@ -41,6 +41,20 @@ import {OptionalFuncComponent} from "./validation/optional-func/optional-func.co
 import {StartsWithFuncComponent} from "./validation/starts-with-func/starts-with-func.component";
 import {WhiteListFuncComponent} from "./validation/white-list-func/white-list-func.component";
 
+/* Sanitization */
+import {SanitizationIntroComponent} from "./sanitization/sanitization-intro/sanitization-intro.component";
+import {CustomSanitizerFuncComponent} from "./sanitization/custom-sanitizer-func/custom-sanitizer-func.component";
+import {ToLowerFuncComponent} from "./sanitization/to-lower-func/to-lower-func.component";
+import {ToUpperFuncComponent} from "./sanitization/to-upper-func/to-upper-func.component";
+import {ToUtcFuncComponent} from "./sanitization/to-utc-func/to-utc-func.component";
+import {TrimEndFuncComponent} from "./sanitization/trim-end-func/trim-end-func.component";
+import {TrimFuncComponent} from "./sanitization/trim-func/trim-func.component";
+import {TrimStartFuncComponent} from "./sanitization/trim-start-func/trim-start-func.component";
+
+/* Advanced */
+import {FullModelValidationComponent} from "./advanced/full-model-validation/full-model-validation.component";
+import {ValidateVsResultComponent} from "./advanced/validate-vs-result/validate-vs-result.component";
+
 /* Introduction */
 export * from "./introduction/getting-started/getting-started.component";
 
@@ -84,6 +98,20 @@ export * from "./validation/optional-func/optional-func.component";
 export * from "./validation/starts-with-func/starts-with-func.component";
 export * from "./validation/white-list-func/white-list-func.component";
 
+/* Sanitization */
+export * from "./sanitization/sanitization-intro/sanitization-intro.component";
+export * from "./sanitization/custom-sanitizer-func/custom-sanitizer-func.component";
+export * from "./sanitization/to-lower-func/to-lower-func.component";
+export * from "./sanitization/to-upper-func/to-upper-func.component";
+export * from "./sanitization/to-utc-func/to-utc-func.component";
+export * from "./sanitization/trim-end-func/trim-end-func.component";
+export * from "./sanitization/trim-func/trim-func.component";
+export * from "./sanitization/trim-start-func/trim-start-func.component";
+
+/* Advanced */
+export * from "./advanced/full-model-validation/full-model-validation.component";
+export * from "./advanced/validate-vs-result/validate-vs-result.component";
+
 export const COMPONENTS: any[] = [
     GettingStartedComponent,
 
@@ -124,4 +152,15 @@ export const COMPONENTS: any[] = [
     OptionalFuncComponent,
     StartsWithFuncComponent,
     WhiteListFuncComponent,
+
+    SanitizationIntroComponent,
+    CustomSanitizerFuncComponent,
+    ToLowerFuncComponent,
+    ToUpperFuncComponent,
+    ToUtcFuncComponent,
+    TrimEndFuncComponent,
+    TrimFuncComponent,
+    TrimStartFuncComponent,
+    FullModelValidationComponent,
+    ValidateVsResultComponent,
 ];

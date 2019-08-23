@@ -3,36 +3,30 @@
     <!-- Article -->
     <ng-container class="article">
         <p>
-            An <code>extension</code> validation <code>method</code> that creates a custom validation method that
-            accepts an
-            <code>object</code> or custom-type value and
-            returns <code>true</code> if there is no validation error, otherwise <code>false</code>.
-            <br><i><strong>Note :</strong> Any mutation to the value will not affect the original value</i>.
+            An <code>extension</code> sanitization <code>method</code> that removes all leading and trailing white-space
+            characters or removes all leading and trailing occurrences of a set of characters from the current validated
+            property.
         </p>
         <div>
             <h2 class="section-heading">
-                Two Definitions
+                Definitions
                 <a id="definitions" aria-hidden="true" class="section-heading-ref"></a>
             </h2>
             <ol>
                 <li>
                     <h3>
-                        <code>.CustomValidator(Func&lt;object, bool&gt; customValidator, string: errorMessage)</code>
+                        <code>.Trim()</code>
                     </h3>
                     <h3>Supported data types :</h3>
                     <ul>
                         <li>
-                            Any data type.
+                            Strings.
                         </li>
                     </ul>
                     <h3>Parameters :</h3>
                     <ul>
                         <li>
-                            <code>customValidator</code> : A custom validator that accepts an <code>object</code> value
-                            and returns <code>true</code> if there is no validation error, otherwise <code>false</code>.
-                        </li>
-                        <li>
-                            <code>errorMessage</code> : A validation error message.
+                            No parameters.
                         </li>
                     </ul>
 
@@ -45,22 +39,18 @@
                 </li>
                 <li>
                     <h3>
-                        <code>.CustomValidator&lt;TSource&gt;(Func&lt;TSource, bool&gt; customValidator, string: errorMessage)</code>
+                        <code>.Trim(params char[] trimChars)</code>
                     </h3>
                     <h3>Supported data types :</h3>
                     <ul>
                         <li>
-                            Any data type.
+                            Strings.
                         </li>
                     </ul>
                     <h3>Parameters :</h3>
                     <ul>
                         <li>
-                            <code>customValidator</code> : A custom validator that accepts an <code>TSource</code> value
-                            and returns <code>true</code> if there is no validation error, otherwise <code>false</code>.
-                        </li>
-                        <li>
-                            <code>errorMessage</code> : A validation error message.
+                            <code>trimChars</code> : The set of characters that will be trimmed.
                         </li>
                     </ul>
 
@@ -85,17 +75,13 @@
                         <a id="example1" aria-hidden="true" class="section-heading-ref"></a>
                     </h3>
                     <strong>To do : </strong>
-                    <i>Validate that the person's country shouldn't be <code>null</code>.
+                    <i>Trim the leading & trailing white-spaces from the person's name property before validation.
                     </i>
                     <p>
-                        Let's start with creating a new class called <code>Person</code> and a class called
-                        <code>Country</code>.
+                        Let's start with creating a new class called <code>Person</code>.
                     </p>
                     <pre class="code-block">
                         <code appHighlight>{{person1}}</code>
-                    </pre>
-                    <pre class="code-block">
-                        <code appHighlight>{{country1}}</code>
                     </pre>
                     <pre class="code-block">
                         <code appHighlight>{{example1}}</code>
@@ -107,7 +93,7 @@
                         <a id="example2" aria-hidden="true" class="section-heading-ref"></a>
                     </h3>
                     <strong>To do : </strong>
-                    <i>Validate that the person's country code shouldn't be <code>null</code>.
+                    <i>Trim the word `John ` from the person's name property before validation.
                     </i>
                     <pre class="code-block">
                         <code appHighlight>{{example2}}</code>

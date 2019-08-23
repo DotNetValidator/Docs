@@ -944,6 +944,223 @@ export const Versions: IVersion[] = [
                         ]
                     },
                 ]
+            },
+            {
+                title: "Sanitization",
+                posts: [
+                    {
+                        id: "sanitization-introduction",
+                        title: "Sanitization Introduction",
+                        route: resolveRoute(VERSIONS["1.0.0"], "sanitization-introduction"),
+                        sections: [
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            }
+                        ]
+                    },
+                    {
+                        id: "custom-sanitizer-func",
+                        title: ".CustomSanitizer()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "custom-sanitizer-func"),
+                        sections: [
+                            {
+                                id: "definitions",
+                                title: "Definitions"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            }
+                        ]
+                    },
+                    {
+                        id: "to-lower-func",
+                        title: ".ToLower()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "to-lower-func"),
+                        sections: [
+                            {
+                                id: "definition",
+                                title: "Definition"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            }
+                        ]
+                    },
+                    {
+                        id: "to-upper-func",
+                        title: ".ToUpper()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "to-upper-func"),
+                        sections: [
+                            {
+                                id: "definition",
+                                title: "Definition"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            }
+                        ]
+                    },
+                    {
+                        id: "to-utc-func",
+                        title: ".ToUtc()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "to-utc-func"),
+                        sections: [
+                            {
+                                id: "definition",
+                                title: "Definition"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            }
+                        ]
+                    },
+                    {
+                        id: "trim-end-func",
+                        title: ".TrimEnd()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "trim-end-func"),
+                        sections: [
+                            {
+                                id: "definition",
+                                title: "Definition"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            }
+                        ]
+                    },
+                    {
+                        id: "trim-func",
+                        title: ".Trim()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "trim-func"),
+                        sections: [
+                            {
+                                id: "definitions",
+                                title: "Definitions"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            }
+                        ]
+                    },
+                    {
+                        id: "trim-start-func",
+                        title: ".TrimStart()",
+                        isCode: true,
+                        route: resolveRoute(VERSIONS["1.0.0"], "trim-start-func"),
+                        sections: [
+                            {
+                                id: "definition",
+                                title: "Definition"
+                            },
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                title: "Advanced",
+                posts: [
+                    {
+                        id: "full-model-validation",
+                        title: "Full Model Validation",
+                        route: resolveRoute(VERSIONS["1.0.0"], "full-model-validation"),
+                        sections: [
+                            {
+                                id: "examples",
+                                title: "Examples"
+                            },
+                            {
+                                id: "example1",
+                                title: "Example 1"
+                            },
+                            {
+                                id: "example2",
+                                title: "Example 2"
+                            }
+                        ]
+                    },
+                    {
+                        id: "validate-vs-result",
+                        title: "Validate() vs Result()",
+                        route: resolveRoute(VERSIONS["1.0.0"], "validate-vs-result"),
+                        sections: [
+                            {
+                                id: "how-to-use",
+                                title: "How to Use?"
+                            },
+                            {
+                                id: "validate",
+                                title: ".Validate()",
+                                isCode: true
+                            },
+                            {
+                                id: "result",
+                                title: ".Result()",
+                                isCode: true
+                            }
+                        ]
+                    },
+                ]
             }
         ]
     }

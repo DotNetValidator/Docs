@@ -3,11 +3,9 @@
     <!-- Article -->
     <ng-container class="article">
         <p>
-            An <code>extension</code> validation <code>method</code> that creates a custom validation method that
-            accepts an
-            <code>object</code> or custom-type value and
-            returns <code>true</code> if there is no validation error, otherwise <code>false</code>.
-            <br><i><strong>Note :</strong> Any mutation to the value will not affect the original value</i>.
+            An <code>extension</code> sanitization <code>method</code> that creates a custom sanitizer method that
+            accepts an object or custom-type value and returns a new object or custom-type value that has been modified
+            using the custom sanitizer.
         </p>
         <div>
             <h2 class="section-heading">
@@ -17,22 +15,20 @@
             <ol>
                 <li>
                     <h3>
-                        <code>.CustomValidator(Func&lt;object, bool&gt; customValidator, string: errorMessage)</code>
+                        <code>.CustomSanitizer(Func&lt;object, object&gt; customSanitizer)</code>
                     </h3>
                     <h3>Supported data types :</h3>
                     <ul>
                         <li>
-                            Any data type.
+                            All data types.
                         </li>
                     </ul>
                     <h3>Parameters :</h3>
                     <ul>
                         <li>
-                            <code>customValidator</code> : A custom validator that accepts an <code>object</code> value
-                            and returns <code>true</code> if there is no validation error, otherwise <code>false</code>.
-                        </li>
-                        <li>
-                            <code>errorMessage</code> : A validation error message.
+                            <code>customSanitizer</code> : A custom sanitizer
+                            that accepts an <code>object</code> value and returns a new <code>object</code> value
+                            that has been modified.
                         </li>
                     </ul>
 
@@ -45,22 +41,20 @@
                 </li>
                 <li>
                     <h3>
-                        <code>.CustomValidator&lt;TSource&gt;(Func&lt;TSource, bool&gt; customValidator, string: errorMessage)</code>
+                        <code>.CustomSanitizer&lt;TSource&gt;(Func&lt;TSource, TSource&gt; customSanitizer)</code>
                     </h3>
                     <h3>Supported data types :</h3>
                     <ul>
                         <li>
-                            Any data type.
+                            All data types.
                         </li>
                     </ul>
                     <h3>Parameters :</h3>
                     <ul>
                         <li>
-                            <code>customValidator</code> : A custom validator that accepts an <code>TSource</code> value
-                            and returns <code>true</code> if there is no validation error, otherwise <code>false</code>.
-                        </li>
-                        <li>
-                            <code>errorMessage</code> : A validation error message.
+                            <code>customSanitizer</code> : A custom sanitizer
+                            that accepts an <code>TSource</code> value and returns a new <code>TSource</code> value
+                            that has been modified.
                         </li>
                     </ul>
 
@@ -85,7 +79,7 @@
                         <a id="example1" aria-hidden="true" class="section-heading-ref"></a>
                     </h3>
                     <strong>To do : </strong>
-                    <i>Validate that the person's country shouldn't be <code>null</code>.
+                    <i>Convert the person's country code to upper-case before validation.
                     </i>
                     <p>
                         Let's start with creating a new class called <code>Person</code> and a class called
@@ -107,7 +101,7 @@
                         <a id="example2" aria-hidden="true" class="section-heading-ref"></a>
                     </h3>
                     <strong>To do : </strong>
-                    <i>Validate that the person's country code shouldn't be <code>null</code>.
+                    <i>Convert the person's country name to lower-case before validation.
                     </i>
                     <pre class="code-block">
                         <code appHighlight>{{example2}}</code>
