@@ -55,6 +55,15 @@ import {TrimStartFuncComponent} from "./sanitization/trim-start-func/trim-start-
 import {FullModelValidationComponent} from "./advanced/full-model-validation/full-model-validation.component";
 import {ValidateVsResultComponent} from "./advanced/validate-vs-result/validate-vs-result.component";
 
+/* Development */
+import {WhyDotnetValidatorComponent} from "./development/why-dotnet-validator/why-dotnet-validator.component";
+import {CollaboratorsComponent} from "./development/collaborators/collaborators.component";
+
+
+
+
+
+
 /* Introduction */
 export * from "./introduction/getting-started/getting-started.component";
 
@@ -112,6 +121,10 @@ export * from "./sanitization/trim-start-func/trim-start-func.component";
 export * from "./advanced/full-model-validation/full-model-validation.component";
 export * from "./advanced/validate-vs-result/validate-vs-result.component";
 
+/* Development */
+export * from "./development/why-dotnet-validator/why-dotnet-validator.component";
+export * from "./development/collaborators/collaborators.component";
+
 export const COMPONENTS: any[] = [
     GettingStartedComponent,
 
@@ -163,4 +176,7 @@ export const COMPONENTS: any[] = [
     TrimStartFuncComponent,
     FullModelValidationComponent,
     ValidateVsResultComponent,
+
+    WhyDotnetValidatorComponent,
+    CollaboratorsComponent
 ];

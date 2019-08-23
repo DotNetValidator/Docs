@@ -203,6 +203,15 @@ const routes: Routes = [
         path: "validate-vs-result",
         component: fromComponents.ValidateVsResultComponent
       },
+
+      {
+        path: "why-dotnet-validator",
+        component: fromComponents.WhyDotnetValidatorComponent
+      },
+      {
+        path: "collaborators",
+        component: fromComponents.CollaboratorsComponent
+      },
     ]
   }
 ];

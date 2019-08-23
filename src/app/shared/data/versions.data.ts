@@ -1161,6 +1161,21 @@ export const Versions: IVersion[] = [
                         ]
                     },
                 ]
+            },
+            {
+                title: "Development",
+                posts: [
+                    {
+                        id: "why-dotnet-validator",
+                        title: "Why DotNet Validator?",
+                        route: resolveRoute(VERSIONS["1.0.0"], "why-dotnet-validator"),
+                    },
+                    {
+                        id: "collaborators",
+                        title: "Collaborators",
+                        route: resolveRoute(VERSIONS["1.0.0"], "collaborators"),
+                    }
+                ]
             }
         ]
     }
