@@ -1,5 +1,6 @@
 import {Component, OnInit} from "@angular/core";
 import {IPost, DocService} from "../../../../shared";
+import {environment} from "../../../../../environments/environment";
 
 @Component({
   selector: "app-collaborators",
@@ -14,6 +15,7 @@ export class CollaboratorsComponent implements OnInit {
   post: IPost;
   previous: IPost;
   next: IPost;
+  settings = environment;
 
   ngOnInit(): void {
     this.post = DocService.findPost(this.versionId, this.postId);
