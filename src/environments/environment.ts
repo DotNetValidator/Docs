@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  gitHubRepo: "https://github.com/dotnet-validator/lib",
+  nugetPackage: "https://www.nuget.org/packages/DotNetValidator/",
+  stackOverflow: "https://stackoverflow.com/questions/tagged/dotnet-validator",
 };
 
 /*

@@ -1,4 +1,5 @@
 import {Component, Input} from "@angular/core";
+import {environment} from "../../../../environments/environment";
 
 @Component({
   selector: "app-post-header",
@@ -7,4 +8,5 @@ import {Component, Input} from "@angular/core";
 })
 export class PostHeaderComponent {
   @Input() title: string;
+  settings = environment;
 }

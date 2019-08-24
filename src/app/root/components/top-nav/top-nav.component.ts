@@ -1,6 +1,7 @@
 import {Component, OnInit} from "@angular/core";
 import {GlobalService} from "../../services";
 import {Observable} from "rxjs";
+import {environment} from "../../../../environments/environment";
 
 @Component({
   selector: "app-top-nav",
@@ -8,6 +9,8 @@ import {Observable} from "rxjs";
   styleUrls: ["./top-nav.component.sass"]
 })
 export class TopNavComponent implements OnInit {
+
+  settings = environment;
 
   version$: Observable<string>;
 
