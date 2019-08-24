@@ -20,10 +20,17 @@
                 <a href="{{settings.gitHubRepo}}" target="blank" class="nav-link">
                     <i class="fa fa-github"></i>
                     GitHub
+                    <a href="{{settings.gitHubRepo + '/stargazers'}}" target="blank" class="badge badge-light">
+                        <i class="fa fa-star"></i>
+                        {{  (gitHubRepo$ | async)?.stargazers_count}}
+                    </a>
                 </a>
                 <a href="{{settings.nugetPackage}}" target="blank" class="nav-link">
                     <i class="fa fa-download"></i>
                     Nuget
+                    <span class="badge badge-light">
+                        {{  (nugetPackage$ | async)?.data[0].totalDownloads}}
+                    </span>
                 </a>
             </div>
         </nav>
