@@ -1,15 +1,15 @@
 import {Component, OnInit} from "@angular/core";
-import {IPost, DocService} from "../../../shared";
+import {IPost, DocService} from "../../../../shared";
 
 @Component({
-  selector: "app-getting-started",
-  templateUrl: "./getting-started.component.html",
-  styleUrls: ["./getting-started.component.sass"]
+  selector: "app-validator-class",
+  templateUrl: "./validator-class.component.html",
+  styleUrls: ["./validator-class.component.sass"]
 })
-export class GettingStartedComponent implements OnInit {
+export class ValidatorClassComponent implements OnInit {
 
   versionId = "1.0.0";
-  postId = "getting-started";
+  postId = "validator-class";
 
   post: IPost;
   previous: IPost;
@@ -22,5 +22,4 @@ export class GettingStartedComponent implements OnInit {
     this.previous = prevNext.previous;
     this.next = prevNext.next;
   }
-
 }

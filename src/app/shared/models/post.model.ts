@@ -15,6 +15,11 @@ export interface IPost {
     title: string;
 
     /**
+     * Indicates whether is the title property is a code or not.
+     */
+    isCode?: boolean;
+
+    /**
      * The full route of the post.
      */
     route: string;

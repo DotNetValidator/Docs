@@ -1,5 +1,69 @@
 app-post-article {
+  width: 100%;
   article {
     margin-top: 1rem;
+  }
+
+  a {
+    color: $theme-color;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-size: 0.75rem;
+  }
+
+  .section-heading {
+    &::before {
+      content: "\f02b";
+      font-family: FontAwesome;
+      margin-right: 0.25rem;
+    }
+  }
+
+  .section-heading-ref {
+    display: block;
+    position: relative;
+    top: -3rem;
+  }
+
+  .installation-list {
+    li {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .package-manager-install {
+    display: block;
+    ::before {
+      content: "PM> ";
+    }
+  }
+
+  .dotnet-cli-install {
+    display: block;
+    ::before {
+      content: "> ";
+    }
+  }
+}
+
+@include screen-min-md {
+  app-post-article {
+    /* 100% of parent - side-nav-width - section-nav-width - 5rem for margins & paddings */
+    width: calc(100vw - #{$side-nav-width} - #{$section-nav-width} - 5rem);
+    max-width: calc(100vw - #{$side-nav-width} - #{$section-nav-width} - 5rem);
   }
 }

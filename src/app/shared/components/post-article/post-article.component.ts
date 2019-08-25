@@ -7,4 +7,5 @@ import {Component, Input} from "@angular/core";
 })
 export class PostArticleComponent {
   @Input() title: string;
+  @Input() showEditBtn = true;
 }
