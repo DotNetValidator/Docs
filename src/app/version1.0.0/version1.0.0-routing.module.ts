@@ -9,12 +9,6 @@ const routes: Routes = [
     path: "",
     component: fromContainers.MainComponent,
     children: [
-
-      {
-        path: "",
-        pathMatch: "full",
-        redirectTo: "getting-started"
-      },
       {
         path: "getting-started",
         component: fromComponents.GettingStartedComponent
@@ -221,6 +215,12 @@ const routes: Routes = [
         path: "contributors",
         component: fromComponents.ContributorsComponent
       },
+
+      {
+        path: "**",
+        pathMatch: "full",
+        redirectTo: "getting-started"
+      }
     ]
   }
 ];

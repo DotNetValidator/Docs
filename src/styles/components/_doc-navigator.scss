@@ -32,10 +32,3 @@
     }
   }
 }
-
-@include screen-min-md {
-  .doc-prev-next {
-    /* 100% of parent - section-nav-width - 4rem for margins & paddings */
-    max-width: calc(100% - #{$section-nav-width});
-  }
-}

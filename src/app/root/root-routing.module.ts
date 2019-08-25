@@ -7,22 +7,17 @@ import * as fromContainers from "./containers";
 
 const routes: Routes = [
     {
-        path: "",
-        redirectTo: "docs",
-        pathMatch: "full"
-    },
-    {
         path: "docs",
         component: fromContainers.LayoutComponent,
         children: [
             {
-                path: "",
-                pathMatch: "full",
-                redirectTo: "v1.0.0"
-            },
-            {
                 path: "v1.0.0",
                 loadChildren: () => import("../version1.0.0").then(m => m.Version100Module)
+            },
+            {
+                path: "**",
+                pathMatch: "full",
+                redirectTo: "v1.0.0"
             }
         ]
     },
@@ -40,7 +35,12 @@ const routes: Routes = [
                 redirectTo: ""
             },
         ]
-    }
+    },
+    {
+        path: "**",
+        pathMatch: "full",
+        redirectTo: "docs"
+    },
 ];
 
 @NgModule({
