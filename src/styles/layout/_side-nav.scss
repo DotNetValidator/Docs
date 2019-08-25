@@ -30,6 +30,10 @@
 
       &.active {
         color: $anchor-hover-color;
+        code {
+          color: $anchor-hover-color;
+          font-weight: bold;
+        }
       }
     }
   }
