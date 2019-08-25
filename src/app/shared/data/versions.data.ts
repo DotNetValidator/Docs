@@ -1166,6 +1166,11 @@ export const Versions: IVersion[] = [
                 title: "Development",
                 posts: [
                     {
+                        id: "release-notes",
+                        title: "Release Notes",
+                        route: resolveRoute(VERSIONS["1.0.0"], "release-notes"),
+                    },
+                    {
                         id: "why-dotnet-validator",
                         title: "Why DotNet Validator?",
                         route: resolveRoute(VERSIONS["1.0.0"], "why-dotnet-validator"),

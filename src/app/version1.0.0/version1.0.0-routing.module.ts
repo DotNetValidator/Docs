@@ -210,6 +210,10 @@ const routes: Routes = [
       },
 
       {
+        path: "release-notes",
+        component: fromComponents.ReleaseNotesComponent
+      },
+      {
         path: "why-dotnet-validator",
         component: fromComponents.WhyDotnetValidatorComponent
       },

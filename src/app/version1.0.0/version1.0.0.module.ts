@@ -16,7 +16,7 @@ import * as fromComponents from "./components";
   ],
   imports: [
     CommonModule,
-    SharedModule.forRoot(),
+    SharedModule,
     Version100RoutingModule
   ]
 })

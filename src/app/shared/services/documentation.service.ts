@@ -48,6 +48,14 @@ export class DocService {
         return Versions[Versions.length - 1];
     }
 
+
+    /**
+     * Gets all versions except the latest version.
+     */
+    public static getPastVersions(): IVersion[] {
+        return Versions.filter(version => version.id !== this.getLatestVersion().id);
+    }
+
     /**
      * Gets all posts in the specified documentation version.
      * @param versionId The unique identifier for the documentation version.

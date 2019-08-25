@@ -56,6 +56,7 @@ import {FullModelValidationComponent} from "./advanced/full-model-validation/ful
 import {ValidateVsResultComponent} from "./advanced/validate-vs-result/validate-vs-result.component";
 
 /* Development */
+import {ReleaseNotesComponent} from "./development/release-notes/release-notes.component";
 import {WhyDotnetValidatorComponent} from "./development/why-dotnet-validator/why-dotnet-validator.component";
 import {CollaboratorsComponent} from "./development/collaborators/collaborators.component";
 
@@ -122,6 +123,7 @@ export * from "./advanced/full-model-validation/full-model-validation.component"
 export * from "./advanced/validate-vs-result/validate-vs-result.component";
 
 /* Development */
+export * from "./development/release-notes/release-notes.component";
 export * from "./development/why-dotnet-validator/why-dotnet-validator.component";
 export * from "./development/collaborators/collaborators.component";
 
@@ -177,6 +179,7 @@ export const COMPONENTS: any[] = [
     FullModelValidationComponent,
     ValidateVsResultComponent,
 
+    ReleaseNotesComponent,
     WhyDotnetValidatorComponent,
     CollaboratorsComponent
 ];

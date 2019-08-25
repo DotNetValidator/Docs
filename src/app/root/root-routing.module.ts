@@ -1,6 +1,8 @@
 import {NgModule} from "@angular/core";
 import {RouterModule, Routes} from "@angular/router";
 
+import * as fromShared from "../shared";
+
 import * as fromContainers from "./containers";
 
 const routes: Routes = [
@@ -22,6 +24,21 @@ const routes: Routes = [
                 path: "v1.0.0",
                 loadChildren: () => import("../version1.0.0").then(m => m.Version100Module)
             }
+        ]
+    },
+    {
+        path: "versions",
+        component: fromContainers.LayoutComponent,
+        children: [
+            {
+                path: "",
+                component: fromShared.VersionsComponent
+            },
+            {
+                path: "**",
+                pathMatch: "full",
+                redirectTo: ""
+            },
         ]
     }
 ];

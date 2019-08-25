@@ -3,11 +3,16 @@ import {PostSectionNavigatorComponent} from "./post-section-navigator/post-secti
 import {PostArticleComponent} from "./post-article/post-article.component";
 import {PostNavigatorComponent} from "./post-navigator/post-navigator.component";
 import {SideNavigatorItemComponent} from "./side-navigator-item/side-navigator-item.component";
+import {VersionsComponent} from "./versions/versions.component";
+
+export * from "./versions/versions.component";
+
 
 export const COMPONENTS: any[] = [
     PostHeaderComponent,
     PostSectionNavigatorComponent,
     PostArticleComponent,
     PostNavigatorComponent,
-    SideNavigatorItemComponent
+    SideNavigatorItemComponent,
+    VersionsComponent
 ];
