@@ -218,8 +218,8 @@ const routes: Routes = [
         component: fromComponents.WhyDotnetValidatorComponent
       },
       {
-        path: "collaborators",
-        component: fromComponents.CollaboratorsComponent
+        path: "contributors",
+        component: fromComponents.ContributorsComponent
       },
     ]
   }
