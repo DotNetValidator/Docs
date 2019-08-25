@@ -1,5 +1,10 @@
 {
   "extends": "tslint:recommended",
+  "linterOptions": {
+    "exclude": [
+      "node_modules"
+    ]
+  },
   "rules": {
     "array-type": false,
     "arrow-parens": false,
@@ -9,6 +14,7 @@
     "component-class-suffix": true,
     "contextual-lifecycle": true,
     "directive-class-suffix": true,
+    "space-before-function-paren": false,
     "directive-selector": [
       true,
       "attribute",
@@ -31,7 +37,7 @@
       true,
       140
     ],
-    "member-access": true,
+    "member-access": false,
     "member-ordering": [
       true,
       {

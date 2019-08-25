@@ -51,9 +51,11 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
+              "src/favicon.svg",
               "src/assets"
             ],
             "styles": [
+              "node_modules/font-awesome/scss/font-awesome.scss",
               "src/styles/styles.scss"
             ],
             "scripts": []
@@ -116,9 +118,11 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
+              "src/favicon.svg",
               "src/assets"
             ],
             "styles": [
+              "node_modules/font-awesome/scss/font-awesome.scss",
               "src/styles/styles.scss"
             ],
             "scripts": []
