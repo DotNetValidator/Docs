@@ -8,5 +8,6 @@ import {environment} from "../../../../environments/environment";
 })
 export class PostHeaderComponent {
   @Input() title: string;
+  @Input() showEditBtn = true;
   settings = environment;
 }
