@@ -50,7 +50,8 @@ const routes: Routes = [
             // Automatic scrolling
             anchorScrolling: "enabled",
             // Use this value to scroll to the html element with a suitable view
-            scrollOffset: [0, 60]
+            scrollOffset: [0, 60],
+            scrollPositionRestoration: "top"
         }
     )
     ],
