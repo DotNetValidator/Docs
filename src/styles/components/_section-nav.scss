@@ -2,7 +2,7 @@ app-post-section-navigator {
   position: sticky;
   top: calc(#{$top-navbar-height} + #{$main-content-top-spacing});
   right: 0;
-  left: auto;
+  left: calc(100% - #{$section-nav-width});
   max-height: calc(100vh - 3rem);
   max-width: $section-nav-width;
   min-width: $section-nav-width;

@@ -59,3 +59,11 @@ app-post-article {
     }
   }
 }
+
+@include screen-min-md {
+  app-post-article {
+    /* 100% of parent - side-nav-width - section-nav-width - 5rem for margins & paddings */
+    width: calc(100vw - #{$side-nav-width} - #{$section-nav-width} - 5rem);
+    max-width: calc(100vw - #{$side-nav-width} - #{$section-nav-width} - 5rem);
+  }
+}
