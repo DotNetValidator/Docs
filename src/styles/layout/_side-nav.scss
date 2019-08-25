@@ -47,6 +47,12 @@
     min-height: 100vh;
     background-color: $side-nav-expanded-bg;
     z-index: 100;
+
+    .navbar {
+      /* To show the last links in mobile devices */
+      margin-bottom: 10rem;
+    }
+
     &.collapsed {
       display: none;
     }
