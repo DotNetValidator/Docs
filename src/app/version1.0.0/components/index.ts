@@ -58,7 +58,7 @@ import {ValidateVsResultComponent} from "./advanced/validate-vs-result/validate-
 /* Development */
 import {ReleaseNotesComponent} from "./development/release-notes/release-notes.component";
 import {WhyDotnetValidatorComponent} from "./development/why-dotnet-validator/why-dotnet-validator.component";
-import {CollaboratorsComponent} from "./development/collaborators/collaborators.component";
+import {ContributorsComponent} from "./development/contributors/contributors.component";
 
 
 
@@ -125,7 +125,7 @@ export * from "./advanced/validate-vs-result/validate-vs-result.component";
 /* Development */
 export * from "./development/release-notes/release-notes.component";
 export * from "./development/why-dotnet-validator/why-dotnet-validator.component";
-export * from "./development/collaborators/collaborators.component";
+export * from "./development/contributors/contributors.component";
 
 export const COMPONENTS: any[] = [
     GettingStartedComponent,
@@ -181,5 +181,5 @@ export const COMPONENTS: any[] = [
 
     ReleaseNotesComponent,
     WhyDotnetValidatorComponent,
-    CollaboratorsComponent
+    ContributorsComponent
 ];

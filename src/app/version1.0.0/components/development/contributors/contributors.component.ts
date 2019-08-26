@@ -3,14 +3,14 @@ import {IPost, DocService} from "../../../../shared";
 import {environment} from "../../../../../environments/environment";
 
 @Component({
-  selector: "app-collaborators",
-  templateUrl: "./collaborators.component.html",
-  styleUrls: ["./collaborators.component.sass"]
+  selector: "app-contributors",
+  templateUrl: "./contributors.component.html",
+  styleUrls: ["./contributors.component.sass"]
 })
-export class CollaboratorsComponent implements OnInit {
+export class ContributorsComponent implements OnInit {
 
   versionId = "1.0.0";
-  postId = "collaborators";
+  postId = "contributors";
 
   post: IPost;
   previous: IPost;
