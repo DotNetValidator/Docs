@@ -15,9 +15,13 @@ const routes: Routes = [
                 loadChildren: () => import("../version1.0.0").then(m => m.Version100Module)
             },
             {
+                path: "v2.0.0",
+                loadChildren: () => import("../version2.0.0").then(m => m.Version200Module)
+            },
+            {
                 path: "**",
                 pathMatch: "full",
-                redirectTo: "v1.0.0"
+                redirectTo: "v2.0.0"
             }
         ]
     },
