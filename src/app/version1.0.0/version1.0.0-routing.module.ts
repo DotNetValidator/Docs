@@ -9,12 +9,6 @@ const routes: Routes = [
     path: "",
     component: fromContainers.MainComponent,
     children: [
-
-      {
-        path: "",
-        pathMatch: "full",
-        redirectTo: "getting-started"
-      },
       {
         path: "getting-started",
         component: fromComponents.GettingStartedComponent
@@ -218,9 +212,15 @@ const routes: Routes = [
         component: fromComponents.WhyDotnetValidatorComponent
       },
       {
-        path: "collaborators",
-        component: fromComponents.CollaboratorsComponent
+        path: "contributors",
+        component: fromComponents.ContributorsComponent
       },
+
+      {
+        path: "**",
+        pathMatch: "full",
+        redirectTo: "getting-started"
+      }
     ]
   }
 ];

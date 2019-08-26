@@ -1176,9 +1176,9 @@ export const Versions: IVersion[] = [
                         route: resolveRoute(VERSIONS["1.0.0"], "why-dotnet-validator"),
                     },
                     {
-                        id: "collaborators",
-                        title: "Collaborators",
-                        route: resolveRoute(VERSIONS["1.0.0"], "collaborators"),
+                        id: "contributors",
+                        title: "Contributors",
+                        route: resolveRoute(VERSIONS["1.0.0"], "contributors"),
                     }
                 ]
             }
