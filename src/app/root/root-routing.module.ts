@@ -7,7 +7,22 @@ import * as fromContainers from "./containers";
 
 const routes: Routes = [
     {
-        path: "docs",
+        path: "versions",
+        component: fromContainers.LayoutComponent,
+        children: [
+            {
+                path: "",
+                component: fromShared.VersionsComponent
+            },
+            {
+                path: "**",
+                pathMatch: "full",
+                redirectTo: ""
+            },
+        ]
+    },
+    {
+        path: "",
         component: fromContainers.LayoutComponent,
         children: [
             {
@@ -26,24 +41,9 @@ const routes: Routes = [
         ]
     },
     {
-        path: "versions",
-        component: fromContainers.LayoutComponent,
-        children: [
-            {
-                path: "",
-                component: fromShared.VersionsComponent
-            },
-            {
-                path: "**",
-                pathMatch: "full",
-                redirectTo: ""
-            },
-        ]
-    },
-    {
         path: "**",
         pathMatch: "full",
-        redirectTo: "docs"
+        redirectTo: ""
     },
 ];
 
